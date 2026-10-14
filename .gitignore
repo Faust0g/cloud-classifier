@@ -1,0 +1,19 @@
+Datos locales: imágenes y datasets
+
+data/
+
+Entornos virtuales de Python
+
+.venv/ venv/
+
+Modelos entrenados
+
+.onnx .pt
+
+Caché de Python
+
+pycache/ *.py[cod]
+
+Archivos del sistema y del editor
+
+.DS_Store Thumbs.db .vscode/
