@@ -1,62 +1,251 @@
-Definición inicial de las clases de nubes.
-Completar con las clases y sus significados acordados para el proyecto.
+#Definición inicial de las clases de nubes.
 
-classes: [
-  Cirrus (Ci),
-  Cirrocumulus (Cc),
-  Cirrostratus (Cs),
-  Altocumulus (Ac),
-  Altostratus (As),
-  Nimbostratus (Ns),
-  Stratocumulus (Sc),
-  Stratus (St),
-  Cumulus (Cu),
-  Cumulonimbus (Cb)
-]
+clases:
+  - id: cirrus
+    codigo: Ci
+    nombre_cientifico: Cirrus
+    altura: alta
+    descripcion: >
+      Filamentos blancos y finos, como pinceladas o cabellos, que se ven
+      muy arriba en el cielo.
+    como_reconocerla:
+      - Aspecto fibroso o sedoso
+      - Sin sombras propias
+    asociaciones: >
+      Suelen aparecer antes de un cambio de tiempo, a veces uno o dos días
+      antes, pero por sí solas no anuncian lluvia.
+    confundible_con: [cirrostratus, cirrocumulus]
+    imagen:
+      archivo: cirrus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Nube Cirrus con filamentos finos y blancos"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Cirrus (Ci) (Howard 1803)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-cirrus.html"
 
-Cirrus (Ci): Nubes separadas, en forma de filamentos blancos y delicados, o de bancos o bandas estrechas, blancas o casi blancas.
-  Estas nubes tienen un aspecto fibroso (parecido a cabellos) o un brillo sedoso, o ambos a la vez.
 
-Cirrocumulus (Cc): Banco, banda o capa de nubes delgadas y blancas, sin sombras, compuestas de elementos muy pequeños en forma de
-  gránulos, ondulaciones, etc., unidos o separados y dispuestos con mayor o menor regularidad; la mayoría de los elementos
-  tienen una anchura aparente inferior a 1 grado.
+  - id: cirrocumulus
+    codigo: Cc
+    nombre_cientifico: Cirrocumulus
+    altura: alta
+    descripcion: >
+      Banco, banda o capa de nubes delgadas y blancas, sin sombras, compuestas
+      de elementos muy pequeños en forma de gránulos, ondulaciones.
+    como_reconocerla:
+     - Pequeños gránulos u ondas blancos, mucho más pequeños que los del Altocumulus
+     - Aspecto fino y sin sombras propias, a menudo con un patrón regular
+    asociaciones: >
+      Suele aparecer en cielos de gran altura con Cirrus y Cirrostratus,
+      y puede señalar cambios en la circulación del aire en niveles altos.
+      Cuando forma una capa extensa de pequeños gránulos u ondulaciones,
+      puede ser una señal de transición en el estado del cielo, aunque no
+      suele estar asociada directamente con precipitaciones en superficie.
+    confundible_con: [altocumulus, cirrostratus]
+    imagen:
+      archivo: cirrocumulus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Nube Cirrocumulus formada por pequeños gránulos blancos"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Cirrocumulus (Cc) (Howard 1803; Renou 1855)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-cirrocumulus.html"
 
-Cirrostratus (Cs): Velo nuboso transparente y blanquecino, de aspecto fibroso (parecido a cabellos) o liso, que cubre total
-  o parcialmente el cielo y que generalmente produce fenómenos de halo.
 
-Altocumulus (Ac): Banco, banda delgada o capa de nubes de color blanco o gris, o a la vez blanco y gris, que
-  normalmente tienen sombras, compuestos de losetas (una o varias capas), masas redondeadas, rodillos , etc., que
-  a veces son parcialmente fibrosos o difusos y pueden estar unidos o no; la mayoría de los pequeños elementos están
-  distribuidos regularmente y tienen por lo general una anchura aparente comprendida entre 1 grado y 5 grados.
+  - id: cirrostratus
+    codigo: Cs
+    nombre_cientifico: Cirrostratus
+    altura: alta
+    descripcion: >
+      Velo nuboso transparente y blanquecino, de aspecto fibroso o liso, que cubre total
+      o parcialmente el cielo y que generalmente produce fenómenos de halo.
+    como_reconocerla:
+      - Velo blanquecino y uniforme a través del cual se distingue el Sol o la Luna
+      - Halo alrededor del Sol o de la Luna, frecuente cuando el velo es delgado
+    asociaciones: >
+      Suele aparecer antes de la llegada de un frente cálido o de un sistema
+      de mal tiempo. Si el velo se extiende y se vuelve progresivamente más
+      denso, puede anunciar un aumento de la nubosidad y la llegada de lluvia
+      durante las horas siguientes o el día siguiente.
+    confundible_con: [cirrus, altostratus]
+    imagen:
+      archivo: cirrostratus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Velo blanquecino de Cirrostratus que cubre el cielo"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Cirrostratus (Cs) ((Howard 1803); Renou 1855)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-cirrostratus.html"
 
-Altostratus (As): Banda delgada o capa de nubes grisácea o azulada de aspecto estriado (con ranuras o canales en
-  formaciones nubosas, dispuestos paralelamente a la corriente de aire), fibroso o uniforme, que cubre total o
-  parcialmente el cielo y tiene partes suficientemente delgadas que permiten percibir vagamente el Sol, como a través
-  de un vidrio deslustrado o esmerilado. Los Altostratus no producen fenómenos de halo.
 
-Nimbostratus (Ns): Capa de nubes gris, a menudo oscura, con un aspecto velado debido a la precipitación más
-  o menos continua de lluvia o nieve, que en la mayoría de los casos llega al suelo. El grosor de esta capa
-  es por todas partes suficiente para ocultar completamente el Sol.
-  Por debajo de la capa suelen aparecer nubes bajas en jirones, que pueden o no estar unidas al Nimbostratus.
+  - id: altocumulus
+    codigo: Ac
+    nombre_cientifico: Altocumulus
+    altura: media
+    descripcion: >
+      Banco, banda delgada o capa de nubes de color blanco o gris, o a la vez blanco y gris, que
+      normalmente tienen sombras, compuestos de parches (una o varias capas) con aspecto de masas redondeadas o rodillos
+    como_reconocerla:
+      - Masas redondeadas, losetas o rodillos de tamaño intermedio, normalmente con sombras
+      - Elementos más grandes que los del Cirrocumulus y más pequeños que los del Stratocumulus
+    asociaciones: >
+      Suele aparecer en situaciones de humedad e inestabilidad en niveles
+      medios. Cuando se presenta con aspecto de pequeñas torres
+      (Altocumulus castellanus), indica inestabilidad atmosférica y puede
+      anticipar el desarrollo de Cumulus de gran crecimiento y tormentas,
+      especialmente si aparece durante la mañana.
+    confundible_con: [cirrocumulus, stratocumulus]
+    imagen:
+      archivo: altocumulus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Nube Altocumulus en masas redondeadas con zonas sombreadas"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Altocumulus (Ac) (Renou 1855)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-altocumulus.html"
 
-Stratocumulus (Sc): Banco, banda delgada o capa de nubes de color blanco o gris, o a la vez blanco y gris, que
-  casi siempre presentan partes oscuras y están compuestos por losetas, masas redondeadas, rodillos, etc., que
-  no son fibrosos (excepto la virga) y que pueden o no estar unidos; la mayoría de los pequeños elementos están
-  distribuidos con regularidad y tienen, por lo general, una anchura aparente superior a 5 grados.
 
-Stratus (St): Capa de nubes generalmente gris, con una base relativamente uniforme de la que pueden caer llovizna,
-  nieve o cinarra. Cuando el Sol es visible a través de la nube, su contorno se distingue claramente. Los Stratus no
-  producen fenómenos de halo salvo quizás a temperaturas muy bajas.
-  Se presentan a veces en forma de de parches deshilachados.
+  - id: altostratus
+    codigo: As
+    nombre_cientifico: Altostratus
+    altura: media
+    descripcion: >
+      Capa gris o azulada, bastante uniforme, que cubre gran parte del cielo.
+      El Sol se ve de forma difusa, como a través de un vidrio esmerilado.
+    como_reconocerla:
+      - Sol visible solo vagamente, sin contorno nítido
+      - Cielo cubierto de manera pareja, sin elementos separados
+      - No produce halo
+    asociaciones: >
+      Suele aparecer por delante de sistemas frontales y, si se espesa, puede
+      terminar en lluvia o nieve continua. No siempre llega a precipitar.
+    confundible_con: [cirrostratus, nimbostratus]
+    imagen:
+      archivo: altostratus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Capa uniforme de Altostratus que deja ver el Sol difusamente"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Altostratus (As) (Renou 1855)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-altostratus.html"
 
-Cumulus (Cu): Nubes separadas, generalmente densas y de contornos bien definidos, que se desarrollan verticalmente en
-  forma de protuberancias, cúpulas o torres cuya parte superior convexa se parece con frecuencia a una coliflor. Las
-  partes de estas nubes iluminadas por el Sol son, en su mayoría, de un blanco brillante; su base es relativamente oscura
-  y casi horizontal.
-  Los Cumulus aparecen a veces rasgados.
 
-Cumulonimbus (Cb): Nube amazacotada y densa, con un desarrollo vertical considerable, en forma de montaña o de enormes torres.
-  Parte, al menos, de su región superior es lisa, fibrosa o estriada, y casi siempre aplastada; esta parte suele extenderse en
-  forma de un yunque o un vasto penacho.
-  Por debajo de la base de esta nube, a menudo muy oscura, aparecen con frecuencia nubes bajas rasgadas, unidas
-  o no a ella, y precipitaciones, a veces en forma de virga.
+  - id: nimbostratus
+    codigo: Ns
+    nombre_cientifico: Nimbostratus
+    altura: media
+    descripcion: >
+      Capa gris oscura y muy espesa que tapa por completo el Sol y de la que
+      cae lluvia o nieve de forma más o menos continua.
+    como_reconocerla:
+      - Sol totalmente oculto
+      - Precipitación persistente, no en chubascos cortos
+      - A veces con jirones de nubes más bajas por debajo
+    asociaciones: >
+      Se asocia a lluvia o nieve continua y de larga duración, a diferencia
+      de los chubascos breves de las nubes de tormenta.
+    confundible_con: [altostratus, stratus]
+    imagen:
+      archivo: nimbostratus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Capa oscura de Nimbostratus asociada a precipitación continua"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Nimbostratus (Ns) (CEN 1930)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-nimbostratus.html"
+
+
+  - id: stratocumulus
+    codigo: Sc
+    nombre_cientifico: Stratocumulus
+    altura: baja
+    descripcion: >
+      Capa o banco de nubes grises y blancas formado por masas redondeadas,
+      como rodillos o losetas grandes, con partes más oscuras.
+    como_reconocerla:
+      - Elementos redondeados más grandes que los del altocumulus
+      - Zonas oscuras, con claros de cielo entre los elementos o capa casi continua
+    asociaciones: >
+      Es una nube muy común que por lo general no trae precipitación
+      importante, a lo sumo llovizna débil. Suele asociarse a tiempo gris y estable.
+    confundible_con: [altocumulus, stratus]
+    imagen:
+      archivo: stratocumulus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Nubes Stratocumulus en masas bajas, redondeadas y sombreadas"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Stratocumulus (Sc) (Kaemtz 1840)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-stratocumulus.html"
+
+
+  - id: stratus
+    codigo: St
+    nombre_cientifico: Stratus
+    altura: baja
+    descripcion: >
+      Capa gris y baja, de base bastante uniforme, parecida a una niebla
+      elevada que cubre el cielo de manera pareja.
+    como_reconocerla:
+      - Base uniforme y sin formas definidas
+      - Si se ve el Sol, su contorno es nítido
+      - Puede estar tan baja que se confunde con niebla
+    asociaciones: >
+      Se asocia a cielos grises y tiempo húmedo y estable. A veces deja
+      llovizna fina o niebla, pero en general no trae lluvia fuerte.
+    confundible_con: [nimbostratus, stratocumulus]
+    imagen:
+      archivo: stratus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Capa baja y uniforme de nubes Stratus"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Stratus (St) (Howard 1803; Hildebrandsson 1887; Abercromby 1887)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-stratus.html"
+
+
+  - id: cumulus
+    codigo: Cu
+    nombre_cientifico: Cumulus
+    altura: baja
+    descripcion: >
+      Nubes separadas, blancas y con forma de coliflor o de algodón, de base
+      oscura y casi plana.
+    como_reconocerla:
+      - Bordes bien definidos
+      - Parte superior abultada y brillante
+      - Base más oscura y plana, con cielo azul entre una nube y otra
+    asociaciones: >
+      Las pequeñas y aisladas se asocian a buen tiempo. Si crecen mucho en
+      altura a lo largo del día, pueden ser el inicio de nubes de tormenta.
+    confundible_con: [stratocumulus, cumulonimbus]
+    imagen:
+      archivo: cumulus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Nube Cumulus aislada con cima abultada y base plana"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Cumulus (Cu) (Howard 1803)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-cumulus.html"
+
+
+  - id: cumulonimbus
+    codigo: Cb
+    nombre_cientifico: Cumulonimbus
+    altura: baja
+    descripcion: >
+      Nube enorme y densa, con forma de montaña o de torre, cuya parte
+      superior suele aplanarse en forma de yunque. Su base es muy oscura.
+    como_reconocerla:
+      - Gran desarrollo vertical
+      - Cima aplanada o en forma de yunque
+      - Base muy oscura, a veces con cortinas de lluvia por debajo
+    asociaciones: >
+      Se asocia a tormentas: chubascos intensos, truenos y relámpagos y, a
+      veces, granizo o ráfagas fuertes.
+    confundible_con: [cumulus, nimbostratus]
+    imagen:
+      archivo: cumulonimbus.jpg
+      credito: "CCSN (CC0)"
+      alt: "Nube Cumulonimbus de gran desarrollo vertical y cima en forma de yunque"
+    fuentes:
+      - titulo: "Atlas Internacional de Nubes: Cumulonimbus (Cb) (Weilbach 1880)"
+        url: "https://cloudatlas.wmo.int/es/clouds-genera-cumulonimbus.html"
+
+
+no_nube:
+  mensaje: "No veo una nube que pueda clasificar. Probá con otra foto."
+
+cautela_general: >
+  Esto describe asociaciones habituales, no es un pronóstico local.

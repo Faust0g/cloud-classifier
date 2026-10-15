@@ -126,6 +126,7 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "playwright" },
+    { name = "pyyaml" },
 ]
 
 [package.metadata]
@@ -135,7 +136,10 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "playwright", specifier = ">=1.64.0" }]
+dev = [
+    { name = "playwright", specifier = ">=1.64.0" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
+]
 
 [[package]]
 name = "colorama"
