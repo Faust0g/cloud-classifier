@@ -102,7 +102,7 @@ class CloudsYamlTests(unittest.TestCase):
 
                 image = cloud["imagen"]
                 self.assertIsInstance(image, dict)
-                for field in ("archivo", "credito", "alt"):
+                for field in ("archivo", "credito"):
                     self.assertIsInstance(image.get(field), str)
                     self.assertTrue(image[field].strip(), f"imagen.{field} está vacío.")
 

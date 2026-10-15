@@ -18,7 +18,6 @@ clases:
     imagen:
       archivo: cirrus.jpg
       credito: "CCSN (CC0)"
-      alt: "Nube Cirrus con filamentos finos y blancos"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Cirrus (Ci) (Howard 1803)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-cirrus.html"
@@ -44,7 +43,6 @@ clases:
     imagen:
       archivo: cirrocumulus.jpg
       credito: "CCSN (CC0)"
-      alt: "Nube Cirrocumulus formada por pequeños gránulos blancos"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Cirrocumulus (Cc) (Howard 1803; Renou 1855)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-cirrocumulus.html"
@@ -69,7 +67,6 @@ clases:
     imagen:
       archivo: cirrostratus.jpg
       credito: "CCSN (CC0)"
-      alt: "Velo blanquecino de Cirrostratus que cubre el cielo"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Cirrostratus (Cs) ((Howard 1803); Renou 1855)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-cirrostratus.html"
@@ -95,7 +92,6 @@ clases:
     imagen:
       archivo: altocumulus.jpg
       credito: "CCSN (CC0)"
-      alt: "Nube Altocumulus en masas redondeadas con zonas sombreadas"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Altocumulus (Ac) (Renou 1855)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-altocumulus.html"
@@ -119,7 +115,6 @@ clases:
     imagen:
       archivo: altostratus.jpg
       credito: "CCSN (CC0)"
-      alt: "Capa uniforme de Altostratus que deja ver el Sol difusamente"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Altostratus (As) (Renou 1855)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-altostratus.html"
@@ -143,7 +138,6 @@ clases:
     imagen:
       archivo: nimbostratus.jpg
       credito: "CCSN (CC0)"
-      alt: "Capa oscura de Nimbostratus asociada a precipitación continua"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Nimbostratus (Ns) (CEN 1930)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-nimbostratus.html"
@@ -166,7 +160,6 @@ clases:
     imagen:
       archivo: stratocumulus.jpg
       credito: "CCSN (CC0)"
-      alt: "Nubes Stratocumulus en masas bajas, redondeadas y sombreadas"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Stratocumulus (Sc) (Kaemtz 1840)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-stratocumulus.html"
@@ -190,7 +183,6 @@ clases:
     imagen:
       archivo: stratus.jpg
       credito: "CCSN (CC0)"
-      alt: "Capa baja y uniforme de nubes Stratus"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Stratus (St) (Howard 1803; Hildebrandsson 1887; Abercromby 1887)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-stratus.html"
@@ -214,7 +206,6 @@ clases:
     imagen:
       archivo: cumulus.jpg
       credito: "CCSN (CC0)"
-      alt: "Nube Cumulus aislada con cima abultada y base plana"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Cumulus (Cu) (Howard 1803)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-cumulus.html"
@@ -238,7 +229,6 @@ clases:
     imagen:
       archivo: cumulonimbus.jpg
       credito: "CCSN (CC0)"
-      alt: "Nube Cumulonimbus de gran desarrollo vertical y cima en forma de yunque"
     fuentes:
       - titulo: "Atlas Internacional de Nubes: Cumulonimbus (Cb) (Weilbach 1880)"
         url: "https://cloudatlas.wmo.int/es/clouds-genera-cumulonimbus.html"
