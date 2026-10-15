@@ -15,6 +15,7 @@ Caché de Python
 __pycache__/
 pycache/
 *.py[cod]
+src/cloud_classifier/demo.pyi
 
 Archivos del sistema y del editor
 
