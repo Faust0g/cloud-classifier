@@ -1,4 +1,62 @@
 Definición inicial de las clases de nubes.
 Completar con las clases y sus significados acordados para el proyecto.
 
-classes: []
+classes: [
+  Cirrus (Ci),
+  Cirrocumulus (Cc),
+  Cirrostratus (Cs),
+  Altocumulus (Ac),
+  Altostratus (As),
+  Nimbostratus (Ns),
+  Stratocumulus (Sc),
+  Stratus (St),
+  Cumulus (Cu),
+  Cumulonimbus (Cb)
+]
+
+Cirrus (Ci): Nubes separadas, en forma de filamentos blancos y delicados, o de bancos o bandas estrechas, blancas o casi blancas.
+  Estas nubes tienen un aspecto fibroso (parecido a cabellos) o un brillo sedoso, o ambos a la vez.
+
+Cirrocumulus (Cc): Banco, banda o capa de nubes delgadas y blancas, sin sombras, compuestas de elementos muy pequeños en forma de
+  gránulos, ondulaciones, etc., unidos o separados y dispuestos con mayor o menor regularidad; la mayoría de los elementos
+  tienen una anchura aparente inferior a 1 grado.
+
+Cirrostratus (Cs): Velo nuboso transparente y blanquecino, de aspecto fibroso (parecido a cabellos) o liso, que cubre total
+  o parcialmente el cielo y que generalmente produce fenómenos de halo.
+
+Altocumulus (Ac): Banco, banda delgada o capa de nubes de color blanco o gris, o a la vez blanco y gris, que
+  normalmente tienen sombras, compuestos de losetas (una o varias capas), masas redondeadas, rodillos , etc., que
+  a veces son parcialmente fibrosos o difusos y pueden estar unidos o no; la mayoría de los pequeños elementos están
+  distribuidos regularmente y tienen por lo general una anchura aparente comprendida entre 1 grado y 5 grados.
+
+Altostratus (As): Banda delgada o capa de nubes grisácea o azulada de aspecto estriado (con ranuras o canales en
+  formaciones nubosas, dispuestos paralelamente a la corriente de aire), fibroso o uniforme, que cubre total o
+  parcialmente el cielo y tiene partes suficientemente delgadas que permiten percibir vagamente el Sol, como a través
+  de un vidrio deslustrado o esmerilado. Los Altostratus no producen fenómenos de halo.
+
+Nimbostratus (Ns): Capa de nubes gris, a menudo oscura, con un aspecto velado debido a la precipitación más
+  o menos continua de lluvia o nieve, que en la mayoría de los casos llega al suelo. El grosor de esta capa
+  es por todas partes suficiente para ocultar completamente el Sol.
+  Por debajo de la capa suelen aparecer nubes bajas en jirones, que pueden o no estar unidas al Nimbostratus.
+
+Stratocumulus (Sc): Banco, banda delgada o capa de nubes de color blanco o gris, o a la vez blanco y gris, que
+  casi siempre presentan partes oscuras y están compuestos por losetas, masas redondeadas, rodillos, etc., que
+  no son fibrosos (excepto la virga) y que pueden o no estar unidos; la mayoría de los pequeños elementos están
+  distribuidos con regularidad y tienen, por lo general, una anchura aparente superior a 5 grados.
+
+Stratus (St): Capa de nubes generalmente gris, con una base relativamente uniforme de la que pueden caer llovizna,
+  nieve o cinarra. Cuando el Sol es visible a través de la nube, su contorno se distingue claramente. Los Stratus no
+  producen fenómenos de halo salvo quizás a temperaturas muy bajas.
+  Se presentan a veces en forma de de parches deshilachados.
+
+Cumulus (Cu): Nubes separadas, generalmente densas y de contornos bien definidos, que se desarrollan verticalmente en
+  forma de protuberancias, cúpulas o torres cuya parte superior convexa se parece con frecuencia a una coliflor. Las
+  partes de estas nubes iluminadas por el Sol son, en su mayoría, de un blanco brillante; su base es relativamente oscura
+  y casi horizontal.
+  Los Cumulus aparecen a veces rasgados.
+
+Cumulonimbus (Cb): Nube amazacotada y densa, con un desarrollo vertical considerable, en forma de montaña o de enormes torres.
+  Parte, al menos, de su región superior es lisa, fibrosa o estriada, y casi siempre aplastada; esta parte suele extenderse en
+  forma de un yunque o un vasto penacho.
+  Por debajo de la base de esta nube, a menudo muy oscura, aparecen con frecuencia nubes bajas rasgadas, unidas
+  o no a ella, y precipitaciones, a veces en forma de virga.

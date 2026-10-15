@@ -12,7 +12,9 @@ Modelos entrenados
 
 Caché de Python
 
-pycache/ *.py[cod]
+__pycache__/
+pycache/
+*.py[cod]
 
 Archivos del sistema y del editor
 

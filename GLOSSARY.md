@@ -7,7 +7,8 @@ Proyecto para clasificar imágenes de nubes mediante técnicas de machine learni
 ## Vocabulario
 
 - **Dataset:** conjunto de imágenes utilizado para entrenar o evaluar el modelo.
-- **Clase:** tipo de nube.
+- **Clase:** categoría que identifica una imagen, como un tipo de nube o No nube.
+- **No nube:** categoría para imágenes que no muestran ninguna de las nubes identificables por este proyecto.
 - **Certeza:** probabilidad de que esa nube sea del tipo propuesto.
 - **Significado:** lo que suele indicar ese tipo de nube.
 - **Entrenamiento:** proceso de ajuste del modelo a partir de datos.
