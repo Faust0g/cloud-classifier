@@ -1,0 +1,20 @@
+Dataset: Cirrus Cumulus Stratus Nimbus (CCSN) Database
+Version: 2
+Persistent identifier: https://doi.org/10.7910/DVN/CADDPD
+Dataset page: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CADDPD
+License: CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/)
+Archive: CCSN.zip, Dataverse file DOI https://doi.org/10.7910/DVN/CADDPD/QLLNIJ
+Archive checksum (MD5): 0787f50947a3f65630a7463206316fd3
+
+Dataset citation:
+Liu, Pu, 2019, "Cirrus Cumulus Stratus Nimbus (CCSN) Database",
+https://doi.org/10.7910/DVN/CADDPD, Harvard Dataverse, V2.
+
+Associated paper:
+Zhang, J. L., Liu, P., Zhang, F., & Song, Q. Q. (2018). CloudNet:
+Ground-based cloud classification with deep convolutional neural network.
+Geophysical Research Letters, 45, 8665–8672.
+https://doi.org/10.1029/2018GL077787
+
+The source class Ct (contrail) is mapped to the project class no_nube as recorded
+in ADR 0001; this mapping may be revised if it damages cirrus classification.

@@ -20,6 +20,22 @@ La analítica de uso de Gradio está desactivada; las imágenes no se usan para 
 
 Las fotos que acompañan las explicaciones se guardan en `app/assets/clouds/`, una por género OMM. Usá el código de clase de `clouds.yaml` como nombre en minúsculas y JPEG o PNG, por ejemplo `ci.jpg` para Cirrus. Estas imágenes son referencias visuales de la clase, no fotos cargadas por quien usa la app.
 
+## Preparar conjuntos públicos
+
+Las imágenes se descargan a `data/`, que está excluido de Git. Para preparar CCSN (2.543 JPEG, con `Ct` asignado a `no_nube`) ejecutá:
+
+```powershell
+uv run python scripts/download_ccsn.py
+```
+
+Para `no_nube` de Open Images V7 se usa el descargador filtrado, que conserva autoría y licencia CC BY 2.0 por imagen en los metadatos versionados:
+
+```powershell
+uv run python scripts/download_no_nube_open_images.py --limit 50
+```
+
+Las citas y licencias de CCSN se conservan en [docs/datasets/ccsn/CITATION.txt](./docs/datasets/ccsn/CITATION.txt); Open Images genera `ATTRIBUTION.csv` y `CITATION.txt` dentro de `docs/datasets/`.
+
 ## Verificación manual de la interfaz
 
 Seguí el [checklist manual](./docs/manual-ui-checklist.md) en escritorio y móvil, incluyendo permisos de cámara y carga alternativa.

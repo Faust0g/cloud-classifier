@@ -1,0 +1,7 @@
+Cita del dataset:
+Kuznetsova, A., et al. (2020). The Open Images Dataset V4: Unified image classification, object detection, and visual relationship detection at scale. International Journal of Computer Vision. https://doi.org/10.1007/s11263-020-01316-z
+
+Versión y página oficial de Open Images: https://storage.googleapis.com/openimages/web/index.html
+Anotaciones de imágenes: https://storage.googleapis.com/openimages/v7/oidv7-val-annotations-human-imagelabels.csv
+
+Las imágenes de ATTRIBUTION.csv están identificadas como CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Consulte la atribución individual por autor, título y enlace a la página original. Las imágenes descargadas no se modifican; si se realizan cambios posteriormente, actualice el campo Changes.
