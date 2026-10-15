@@ -1,0 +1,69 @@
+{
+  "contract_version": 1,
+  "classes": [
+    {"id": "cirrus", "code": "Ci"},
+    {"id": "cirrocumulus", "code": "Cc"},
+    {"id": "cirrostratus", "code": "Cs"},
+    {"id": "altocumulus", "code": "Ac"},
+    {"id": "altostratus", "code": "As"},
+    {"id": "nimbostratus", "code": "Ns"},
+    {"id": "stratocumulus", "code": "Sc"},
+    {"id": "stratus", "code": "St"},
+    {"id": "cumulus", "code": "Cu"},
+    {"id": "cumulonimbus", "code": "Cb"},
+    {"id": "no_nube", "code": null}
+  ],
+  "input": {
+    "orientation": "apply_exif",
+    "color_mode": "RGB",
+    "resize": {
+      "short_side": 256,
+      "preserve_aspect_ratio": true,
+      "rounding": "nearest_half_up",
+      "method": "Pillow_BILINEAR",
+      "antialias": true
+    },
+    "crop": {
+      "method": "center",
+      "size": [224, 224],
+      "odd_remainder": "discard_right_and_bottom"
+    },
+    "tensor": {
+      "dtype": "float32",
+      "layout": "NCHW",
+      "shape": ["batch", 3, 224, 224],
+      "channel_order": "RGB",
+      "pixel_range_before_normalization": [0.0, 1.0]
+    },
+    "normalization": {
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225],
+      "source": "ImageNet standard values; provisional until model selection"
+    }
+  },
+  "augmentation": {
+    "inference": "none",
+    "training_only": true,
+    "vertical_flip": false
+  },
+  "output": {
+    "values": "logits",
+    "shape": ["batch", 11],
+    "class_axis": 1,
+    "confidence": "softmax_over_logits_along_class_axis"
+  },
+  "decision": {
+    "no_nube": "top_class_is_no_nube",
+    "cloud": "accept_when_top_cloud_confidence_is_at_least_threshold"
+  },
+  "confidence_threshold": {
+    "status": "pending_calibration",
+    "value": null,
+    "provenance": {
+      "partition": "calibration",
+      "target_precision": null,
+      "model_sha256": null,
+      "calibration_results": null
+    }
+  }
+}

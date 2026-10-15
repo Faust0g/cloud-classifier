@@ -1,0 +1,3 @@
+# Preprocesamiento compartido del modelo
+
+El entrenamiento, la evaluación y la app usarán una sola función Pillow compartida que aplica la orientación EXIF, convierte a RGB, escala el lado corto a 256 píxeles conservando la proporción, y recorta el centro a 224×224 antes de normalizar a tensor NCHW `float32`; así se evita deformar nubes al ajustar las dimensiones. El recorte central puede eliminar nubes o rasgos importantes que queden en los bordes, por lo que el encuadre de la imagen es una limitación conocida. La media y el desvío ImageNet registrados en el contrato son provisionales hasta confirmar la configuración del modelo preentrenado elegido.
