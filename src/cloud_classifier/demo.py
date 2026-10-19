@@ -6,6 +6,7 @@ import gradio as gr
 from gradio.data_classes import FileData
 from PIL import Image
 
+from cloud_classifier.preprocessing import preprocess_image
 from cloud_classifier.prediction import PredictionResult, format_prediction
 from cloud_classifier.simulated_predictor import (
     SIMULATED_PREDICTIONS,

@@ -20,6 +20,10 @@ La analítica de uso de Gradio está desactivada; las imágenes no se usan para 
 
 Las fotos que acompañan las explicaciones se guardan en `app/assets/clouds/`, una por género OMM. Usá el código de clase de `clouds.yaml` como nombre en minúsculas y JPEG o PNG, por ejemplo `ci.jpg` para Cirrus. Estas imágenes son referencias visuales de la clase, no fotos cargadas por quien usa la app.
 
+## Contrato del modelo
+
+El contrato versionado está en `src/cloud_classifier/model_contract.json`. Define el orden de las 10 clases OMM seguido de `no_nube`, las salidas como logits y el preprocesamiento compartido implementado en `src/cloud_classifier/preprocessing.py`. La media y el desvío ImageNet son provisionales hasta confirmar el modelo preentrenado; el umbral se deja pendiente de calibración.
+
 ## Preparar conjuntos públicos
 
 Las imágenes se descargan a `data/`, que está excluido de Git. Para preparar CCSN (2.543 JPEG, con `Ct` asignado a `no_nube`) ejecutá:
