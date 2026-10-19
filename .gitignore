@@ -1,6 +1,9 @@
 Datos locales: imágenes y datasets
 
-data/
+data/**
+!data/**/
+!data/.gitkeep
+!data/**/.gitkeep
 
 Entornos virtuales de Python
 
