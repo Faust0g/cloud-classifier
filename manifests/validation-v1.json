@@ -1,0 +1,1457 @@
+{
+  "validation_version": 1,
+  "algorithm": "grouped-greedy-class-and-size-stratification-v2",
+  "partition_sha256": "0ebcf4d3c72ce3344cb51a4024ff5e7333dc9fcfe7e6c5e6bd0c7d5c53c0eae6",
+  "seed": 42,
+  "validation_fraction_target": 0.1,
+  "validation_paths": [
+    "data/ccsn/images/Ac/Ac-N004.jpg",
+    "data/ccsn/images/Ac/Ac-N011.jpg",
+    "data/ccsn/images/Ac/Ac-N039.jpg",
+    "data/ccsn/images/Ac/Ac-N058.jpg",
+    "data/ccsn/images/Ac/Ac-N069.jpg",
+    "data/ccsn/images/Ac/Ac-N075.jpg",
+    "data/ccsn/images/Ac/Ac-N100.jpg",
+    "data/ccsn/images/Ac/Ac-N130.jpg",
+    "data/ccsn/images/Ac/Ac-N136.jpg",
+    "data/ccsn/images/Ac/Ac-N137.jpg",
+    "data/ccsn/images/Ac/Ac-N148.jpg",
+    "data/ccsn/images/Ac/Ac-N168.jpg",
+    "data/ccsn/images/Ac/Ac-N174.jpg",
+    "data/ccsn/images/Ac/Ac-N183.jpg",
+    "data/ccsn/images/Ac/Ac-N201.jpg",
+    "data/ccsn/images/Ac/Ac-N216.jpg",
+    "data/ccsn/images/As/As-N028.jpg",
+    "data/ccsn/images/As/As-N030.jpg",
+    "data/ccsn/images/As/As-N074.jpg",
+    "data/ccsn/images/As/As-N089.jpg",
+    "data/ccsn/images/As/As-N112.jpg",
+    "data/ccsn/images/As/As-N116.jpg",
+    "data/ccsn/images/As/As-N123.jpg",
+    "data/ccsn/images/As/As-N145.jpg",
+    "data/ccsn/images/As/As-N149.jpg",
+    "data/ccsn/images/As/As-N151.jpg",
+    "data/ccsn/images/As/As-N152.jpg",
+    "data/ccsn/images/As/As-N154.jpg",
+    "data/ccsn/images/As/As-N187.jpg",
+    "data/ccsn/images/Cb/Cb-N042.jpg",
+    "data/ccsn/images/Cb/Cb-N055.jpg",
+    "data/ccsn/images/Cb/Cb-N056.jpg",
+    "data/ccsn/images/Cb/Cb-N067.jpg",
+    "data/ccsn/images/Cb/Cb-N074.jpg",
+    "data/ccsn/images/Cb/Cb-N076.jpg",
+    "data/ccsn/images/Cb/Cb-N124.jpg",
+    "data/ccsn/images/Cb/Cb-N125.jpg",
+    "data/ccsn/images/Cb/Cb-N126.jpg",
+    "data/ccsn/images/Cb/Cb-N133.jpg",
+    "data/ccsn/images/Cb/Cb-N144.jpg",
+    "data/ccsn/images/Cb/Cb-N153.jpg",
+    "data/ccsn/images/Cb/Cb-N162.jpg",
+    "data/ccsn/images/Cb/Cb-N185.jpg",
+    "data/ccsn/images/Cb/Cb-N220.jpg",
+    "data/ccsn/images/Cb/Cb-N230.jpg",
+    "data/ccsn/images/Cc/Cc-N004.jpg",
+    "data/ccsn/images/Cc/Cc-N008.jpg",
+    "data/ccsn/images/Cc/Cc-N010.jpg",
+    "data/ccsn/images/Cc/Cc-N031.jpg",
+    "data/ccsn/images/Cc/Cc-N032.jpg",
+    "data/ccsn/images/Cc/Cc-N076.jpg",
+    "data/ccsn/images/Cc/Cc-N081.jpg",
+    "data/ccsn/images/Cc/Cc-N086.jpg",
+    "data/ccsn/images/Cc/Cc-N088.jpg",
+    "data/ccsn/images/Cc/Cc-N093.jpg",
+    "data/ccsn/images/Cc/Cc-N106.jpg",
+    "data/ccsn/images/Cc/Cc-N108.jpg",
+    "data/ccsn/images/Cc/Cc-N134.jpg",
+    "data/ccsn/images/Cc/Cc-N146.jpg",
+    "data/ccsn/images/Cc/Cc-N150.jpg",
+    "data/ccsn/images/Cc/Cc-N202.jpg",
+    "data/ccsn/images/Cc/Cc-N232.jpg",
+    "data/ccsn/images/Cc/Cc-N249.jpg",
+    "data/ccsn/images/Cc/Cc-N260.jpg",
+    "data/ccsn/images/Ci/Ci-N003.jpg",
+    "data/ccsn/images/Ci/Ci-N005.jpg",
+    "data/ccsn/images/Ci/Ci-N013.jpg",
+    "data/ccsn/images/Ci/Ci-N023.jpg",
+    "data/ccsn/images/Ci/Ci-N035.jpg",
+    "data/ccsn/images/Ci/Ci-N053.jpg",
+    "data/ccsn/images/Ci/Ci-N083.jpg",
+    "data/ccsn/images/Ci/Ci-N094.jpg",
+    "data/ccsn/images/Ci/Ci-N114.jpg",
+    "data/ccsn/images/Ci/Ci-N138.jpg",
+    "data/ccsn/images/Cs/Cs-N014.jpg",
+    "data/ccsn/images/Cs/Cs-N045.jpg",
+    "data/ccsn/images/Cs/Cs-N057.jpg",
+    "data/ccsn/images/Cs/Cs-N076.jpg",
+    "data/ccsn/images/Cs/Cs-N112.jpg",
+    "data/ccsn/images/Cs/Cs-N126.jpg",
+    "data/ccsn/images/Cs/Cs-N129.jpg",
+    "data/ccsn/images/Cs/Cs-N146.jpg",
+    "data/ccsn/images/Cs/Cs-N151.jpg",
+    "data/ccsn/images/Cs/Cs-N155.jpg",
+    "data/ccsn/images/Cs/Cs-N161.jpg",
+    "data/ccsn/images/Cs/Cs-N163.jpg",
+    "data/ccsn/images/Cs/Cs-N202.jpg",
+    "data/ccsn/images/Cs/Cs-N212.jpg",
+    "data/ccsn/images/Cs/Cs-N224.jpg",
+    "data/ccsn/images/Cs/Cs-N226.jpg",
+    "data/ccsn/images/Cs/Cs-N227.jpg",
+    "data/ccsn/images/Cs/Cs-N232.jpg",
+    "data/ccsn/images/Cs/Cs-N253.jpg",
+    "data/ccsn/images/Cu/Cu-N008.jpg",
+    "data/ccsn/images/Cu/Cu-N010.jpg",
+    "data/ccsn/images/Cu/Cu-N040.jpg",
+    "data/ccsn/images/Cu/Cu-N058.jpg",
+    "data/ccsn/images/Cu/Cu-N060.jpg",
+    "data/ccsn/images/Cu/Cu-N066.jpg",
+    "data/ccsn/images/Cu/Cu-N083.jpg",
+    "data/ccsn/images/Cu/Cu-N105.jpg",
+    "data/ccsn/images/Cu/Cu-N119.jpg",
+    "data/ccsn/images/Cu/Cu-N120.jpg",
+    "data/ccsn/images/Cu/Cu-N142.jpg",
+    "data/ccsn/images/Cu/Cu-N164.jpg",
+    "data/ccsn/images/Cu/Cu-N181.jpg",
+    "data/ccsn/images/Cu/Cu-N182.jpg",
+    "data/ccsn/images/Ns/Ns-N002.jpg",
+    "data/ccsn/images/Ns/Ns-N034.jpg",
+    "data/ccsn/images/Ns/Ns-N040.jpg",
+    "data/ccsn/images/Ns/Ns-N044.jpg",
+    "data/ccsn/images/Ns/Ns-N080.jpg",
+    "data/ccsn/images/Ns/Ns-N094.jpg",
+    "data/ccsn/images/Ns/Ns-N106.jpg",
+    "data/ccsn/images/Ns/Ns-N117.jpg",
+    "data/ccsn/images/Ns/Ns-N128.jpg",
+    "data/ccsn/images/Ns/Ns-N145.jpg",
+    "data/ccsn/images/Ns/Ns-N151.jpg",
+    "data/ccsn/images/Ns/Ns-N160.jpg",
+    "data/ccsn/images/Ns/Ns-N192.jpg",
+    "data/ccsn/images/Ns/Ns-N208.jpg",
+    "data/ccsn/images/Ns/Ns-N230.jpg",
+    "data/ccsn/images/Ns/Ns-N232.jpg",
+    "data/ccsn/images/Ns/Ns-N234.jpg",
+    "data/ccsn/images/Ns/Ns-N235.jpg",
+    "data/ccsn/images/Ns/Ns-N240.jpg",
+    "data/ccsn/images/Ns/Ns-N259.jpg",
+    "data/ccsn/images/Sc/Sc-N028.jpg",
+    "data/ccsn/images/Sc/Sc-N046.jpg",
+    "data/ccsn/images/Sc/Sc-N049.jpg",
+    "data/ccsn/images/Sc/Sc-N053.jpg",
+    "data/ccsn/images/Sc/Sc-N063.jpg",
+    "data/ccsn/images/Sc/Sc-N083.jpg",
+    "data/ccsn/images/Sc/Sc-N108.jpg",
+    "data/ccsn/images/Sc/Sc-N132.jpg",
+    "data/ccsn/images/Sc/Sc-N135.jpg",
+    "data/ccsn/images/Sc/Sc-N138.jpg",
+    "data/ccsn/images/Sc/Sc-N152.jpg",
+    "data/ccsn/images/Sc/Sc-N161.jpg",
+    "data/ccsn/images/Sc/Sc-N192.jpg",
+    "data/ccsn/images/Sc/Sc-N210.jpg",
+    "data/ccsn/images/Sc/Sc-N224.jpg",
+    "data/ccsn/images/Sc/Sc-N234.jpg",
+    "data/ccsn/images/Sc/Sc-N236.jpg",
+    "data/ccsn/images/Sc/Sc-N254.jpg",
+    "data/ccsn/images/Sc/Sc-N258.jpg",
+    "data/ccsn/images/Sc/Sc-N263.jpg",
+    "data/ccsn/images/Sc/Sc-N279.jpg",
+    "data/ccsn/images/Sc/Sc-N289.jpg",
+    "data/ccsn/images/Sc/Sc-N317.jpg",
+    "data/ccsn/images/Sc/Sc-N329.jpg",
+    "data/ccsn/images/St/St-N029.jpg",
+    "data/ccsn/images/St/St-N035.jpg",
+    "data/ccsn/images/St/St-N058.jpg",
+    "data/ccsn/images/St/St-N059.jpg",
+    "data/ccsn/images/St/St-N076.jpg",
+    "data/ccsn/images/St/St-N084.jpg",
+    "data/ccsn/images/St/St-N104.jpg",
+    "data/ccsn/images/St/St-N112.jpg",
+    "data/ccsn/images/St/St-N159.jpg",
+    "data/ccsn/images/St/St-N172.jpg",
+    "data/ccsn/images/St/St-N173.jpg",
+    "data/ccsn/images/St/St-N175.jpg",
+    "data/ccsn/images/St/St-N188.jpg",
+    "data/ccsn/images/St/St-N192.jpg",
+    "data/ccsn/images/St/St-N197.jpg",
+    "data/ccsn/images/no_nube/Ct-N026.jpg",
+    "data/ccsn/images/no_nube/Ct-N037.jpg",
+    "data/ccsn/images/no_nube/Ct-N077.jpg",
+    "data/ccsn/images/no_nube/Ct-N081.jpg",
+    "data/ccsn/images/no_nube/Ct-N094.jpg",
+    "data/ccsn/images/no_nube/Ct-N098.jpg",
+    "data/ccsn/images/no_nube/Ct-N112.jpg",
+    "data/ccsn/images/no_nube/Ct-N125.jpg",
+    "data/ccsn/images/no_nube/Ct-N140.jpg",
+    "data/ccsn/images/no_nube/Ct-N141.jpg",
+    "data/ccsn/images/no_nube/Ct-N148.jpg",
+    "data/ccsn/images/no_nube/Ct-N169.jpg",
+    "data/ccsn/images/no_nube/Ct-N184.jpg",
+    "data/no_nube/open-images-v7/validation/images/19ad41f11e7dd911.jpg",
+    "data/no_nube/open-images-v7/validation/images/1a64ceaa916530f1.jpg",
+    "data/no_nube/open-images-v7/validation/images/1c2db283bf38a5b2.jpg",
+    "data/no_nube/open-images-v7/validation/images/1df457b21e4f9397.jpg",
+    "data/no_nube/open-images-v7/validation/images/20b17e07d25526b6.jpg",
+    "data/no_nube/open-images-v7/validation/images/211c8f93de48bafa.jpg",
+    "data/no_nube/open-images-v7/validation/images/2fae1af41b918fef.jpg",
+    "data/no_nube/open-images-v7/validation/images/3045215d5a2844e1.jpg",
+    "data/no_nube/open-images-v7/validation/images/353e81020dca55f9.jpg",
+    "data/no_nube/open-images-v7/validation/images/441bc8c4ae570f81.jpg",
+    "data/no_nube/open-images-v7/validation/images/45121edb4d4720bc.jpg",
+    "data/no_nube/open-images-v7/validation/images/5552914d9cc9c21e.jpg",
+    "data/no_nube/open-images-v7/validation/images/678bb7d99c3dc5c5.jpg",
+    "data/no_nube/open-images-v7/validation/images/75546abc3fa8e5d6.jpg",
+    "data/no_nube/open-images-v7/validation/images/8134ecd11b86ef75.jpg",
+    "data/no_nube/open-images-v7/validation/images/9811150fca35143e.jpg",
+    "data/no_nube/open-images-v7/validation/images/9b8963c0048ec88b.jpg",
+    "data/no_nube/open-images-v7/validation/images/b2338c96af8c3d3a.jpg",
+    "data/no_nube/open-images-v7/validation/images/c343515340ef676e.jpg",
+    "data/no_nube/open-images-v7/validation/images/c7aef96c788ceba8.jpg",
+    "data/no_nube/open-images-v7/validation/images/de972028b90d798f.jpg",
+    "data/no_nube/open-images-v7/validation/images/f8a7cd9ed2c66a44.jpg",
+    "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-05-00 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-07-28 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/cirrocumulus/Screenshot 2026-10-18 at 22-09-23 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-22-29 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-24-19 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/cirrus/Screenshot 2026-10-18 at 21-47-08 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-27-23 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-28-46 A storm system near Alta Val Tidone Piacenza Italy.png",
+    "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-02-42 Photo Gallery - Cloud Appreciation Society.png",
+    "data/sociedad/stratus/Screenshot 2026-10-18 at 22-01-19 Photo Gallery - Cloud Appreciation Society.png"
+  ],
+  "groups": [
+    {
+      "group_id": "group_017067bf3749a5c3",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N216.jpg",
+        "data/ccsn/images/St/St-N192.jpg"
+      ]
+    },
+    {
+      "group_id": "group_02cf694e963d26c0",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/c7aef96c788ceba8.jpg"
+      ]
+    },
+    {
+      "group_id": "group_032ed5d94efd583a",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N040.jpg"
+      ]
+    },
+    {
+      "group_id": "group_038f9573d56d7434",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/9811150fca35143e.jpg"
+      ]
+    },
+    {
+      "group_id": "group_04bd9ebc5a27580a",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N083.jpg"
+      ]
+    },
+    {
+      "group_id": "group_0742cdf6db94e834",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N008.jpg"
+      ]
+    },
+    {
+      "group_id": "group_08568bde6abd2141",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N135.jpg"
+      ]
+    },
+    {
+      "group_id": "group_085bf0f43a65bac7",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/75546abc3fa8e5d6.jpg"
+      ]
+    },
+    {
+      "group_id": "group_088991592479608e",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N174.jpg"
+      ]
+    },
+    {
+      "group_id": "group_09d69d3dc19066c9",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N098.jpg"
+      ]
+    },
+    {
+      "group_id": "group_0b3932695498c3d7",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N162.jpg"
+      ]
+    },
+    {
+      "group_id": "group_0c16878a18926bff",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N124.jpg"
+      ]
+    },
+    {
+      "group_id": "group_0c35cbd6ccb447d2",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N138.jpg"
+      ]
+    },
+    {
+      "group_id": "group_0eb84ddab90cbfc4",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N063.jpg"
+      ]
+    },
+    {
+      "group_id": "group_0f8edc7984034634",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N011.jpg"
+      ]
+    },
+    {
+      "group_id": "group_1028c392648fa80e",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N168.jpg"
+      ]
+    },
+    {
+      "group_id": "group_15871c7252bc02b0",
+      "paths": [
+        "data/sociedad/cirrus/Screenshot 2026-10-18 at 21-47-08 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_16f30a1dab3d76d1",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N014.jpg"
+      ]
+    },
+    {
+      "group_id": "group_1700047992e23e59",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/5552914d9cc9c21e.jpg"
+      ]
+    },
+    {
+      "group_id": "group_17cfa99a3d9f2706",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N224.jpg"
+      ]
+    },
+    {
+      "group_id": "group_1984559bb5499634",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/de972028b90d798f.jpg"
+      ]
+    },
+    {
+      "group_id": "group_1f302ca46f1de636",
+      "paths": [
+        "data/ccsn/images/As/As-N089.jpg"
+      ]
+    },
+    {
+      "group_id": "group_1f5cafe0d52be429",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N230.jpg"
+      ]
+    },
+    {
+      "group_id": "group_20c88a990a4b9485",
+      "paths": [
+        "data/sociedad/stratus/Screenshot 2026-10-18 at 22-01-19 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_2279a33e3cd520d2",
+      "paths": [
+        "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-28-46 A storm system near Alta Val Tidone Piacenza Italy.png"
+      ]
+    },
+    {
+      "group_id": "group_2297126e0390da2d",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N108.jpg"
+      ]
+    },
+    {
+      "group_id": "group_24746afa8a44635a",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N137.jpg"
+      ]
+    },
+    {
+      "group_id": "group_25aee612ceb00fb8",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/678bb7d99c3dc5c5.jpg"
+      ]
+    },
+    {
+      "group_id": "group_27a8494ed251c1b7",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N146.jpg"
+      ]
+    },
+    {
+      "group_id": "group_29baef8a008a9b44",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N013.jpg",
+        "data/ccsn/images/Cu/Cu-N164.jpg"
+      ]
+    },
+    {
+      "group_id": "group_2b2422f6af128606",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N289.jpg"
+      ]
+    },
+    {
+      "group_id": "group_2bf97edb6d6857ac",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N112.jpg"
+      ]
+    },
+    {
+      "group_id": "group_2db97067a3bcefa4",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N119.jpg"
+      ]
+    },
+    {
+      "group_id": "group_2ed3916a50493d4c",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N144.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3097ff0b57939c78",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N146.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3198571d308c772e",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N130.jpg"
+      ]
+    },
+    {
+      "group_id": "group_33c51e3baa72bb89",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N106.jpg"
+      ]
+    },
+    {
+      "group_id": "group_375eb9d811e66bd8",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N202.jpg"
+      ]
+    },
+    {
+      "group_id": "group_39681a2f4831b6b8",
+      "paths": [
+        "data/ccsn/images/As/As-N028.jpg",
+        "data/ccsn/images/Ci/Ci-N003.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3982d4a9be74218a",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N093.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3be4784cdadf315f",
+      "paths": [
+        "data/ccsn/images/St/St-N188.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3c91808f326b1764",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N227.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3ced02795a022f13",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N094.jpg"
+      ]
+    },
+    {
+      "group_id": "group_3f4ad419e7bac1b4",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N077.jpg"
+      ]
+    },
+    {
+      "group_id": "group_443a06d07d8235c2",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N045.jpg"
+      ]
+    },
+    {
+      "group_id": "group_44477b5238307f3b",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N240.jpg"
+      ]
+    },
+    {
+      "group_id": "group_45b23aa42af52752",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N134.jpg"
+      ]
+    },
+    {
+      "group_id": "group_4630e45b4c4dd464",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N136.jpg"
+      ]
+    },
+    {
+      "group_id": "group_4a76bffaef535308",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N232.jpg"
+      ]
+    },
+    {
+      "group_id": "group_4d00f3a2766d8d75",
+      "paths": [
+        "data/ccsn/images/As/As-N116.jpg"
+      ]
+    },
+    {
+      "group_id": "group_4d9e8b15b37d69fe",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N153.jpg"
+      ]
+    },
+    {
+      "group_id": "group_4df2f3150b30682c",
+      "paths": [
+        "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-02-42 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_51112c6cccdaf761",
+      "paths": [
+        "data/ccsn/images/St/St-N175.jpg"
+      ]
+    },
+    {
+      "group_id": "group_513281f82d98f447",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N141.jpg"
+      ]
+    },
+    {
+      "group_id": "group_519295051cfec6fd",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N120.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5476488d9b892d23",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N232.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5519070002ae48b7",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N066.jpg"
+      ]
+    },
+    {
+      "group_id": "group_55ba21de0c904b7e",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N184.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5635ce87ef2efa52",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N317.jpg"
+      ]
+    },
+    {
+      "group_id": "group_59addccdaa0f2a6f",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N028.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5c315914b865338f",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N080.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5cfae1a0f78fb154",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N100.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5d9f37f93d3c6b4d",
+      "paths": [
+        "data/ccsn/images/St/St-N029.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5e7d562efd08b81a",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N210.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5f1e293734ed5267",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N151.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5f3460ac664ac3b1",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N126.jpg"
+      ]
+    },
+    {
+      "group_id": "group_5fd06dd5061c17fa",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/211c8f93de48bafa.jpg"
+      ]
+    },
+    {
+      "group_id": "group_61b6ffd426806e7b",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N192.jpg"
+      ]
+    },
+    {
+      "group_id": "group_61bbc8c9041639ef",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N035.jpg",
+        "data/ccsn/images/St/St-N159.jpg"
+      ]
+    },
+    {
+      "group_id": "group_6217c1cba9d4c09a",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N094.jpg"
+      ]
+    },
+    {
+      "group_id": "group_636b7b1ccd309744",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N081.jpg"
+      ]
+    },
+    {
+      "group_id": "group_64467d5aab0a9d78",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N088.jpg"
+      ]
+    },
+    {
+      "group_id": "group_6446b6c35e81bbbc",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N259.jpg"
+      ]
+    },
+    {
+      "group_id": "group_65a067ea206df1bd",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N069.jpg"
+      ]
+    },
+    {
+      "group_id": "group_65d7ebda09c5ff92",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N185.jpg"
+      ]
+    },
+    {
+      "group_id": "group_68a2bd4900b3a534",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N169.jpg"
+      ]
+    },
+    {
+      "group_id": "group_69a1b7834bc0bfde",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N125.jpg"
+      ]
+    },
+    {
+      "group_id": "group_69b1bf5abf2e352f",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N002.jpg"
+      ]
+    },
+    {
+      "group_id": "group_6a7d9104a1a48a41",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N254.jpg"
+      ]
+    },
+    {
+      "group_id": "group_6c508b5284113723",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N076.jpg"
+      ]
+    },
+    {
+      "group_id": "group_6c79128327927f7a",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N329.jpg"
+      ]
+    },
+    {
+      "group_id": "group_741056ef252ce778",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/1a64ceaa916530f1.jpg"
+      ]
+    },
+    {
+      "group_id": "group_77f96aa92194baf8",
+      "paths": [
+        "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-07-28 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_7aba60851cec65b0",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N230.jpg",
+        "data/ccsn/images/Cu/Cu-N058.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7b5a6de7a4da6aa2",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N249.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7bf9c85cce7d2746",
+      "paths": [
+        "data/ccsn/images/As/As-N149.jpg",
+        "data/ccsn/images/Cu/Cu-N182.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7d3aa62e76ac33a1",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N023.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7d9261e8ecd06e8a",
+      "paths": [
+        "data/ccsn/images/St/St-N112.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7daffd7a666f5d95",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N010.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7e24d1d5126e2446",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N105.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7e79ea46c3ea33ad",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N112.jpg"
+      ]
+    },
+    {
+      "group_id": "group_7f65695d2caf0723",
+      "paths": [
+        "data/ccsn/images/As/As-N145.jpg",
+        "data/ccsn/images/St/St-N172.jpg"
+      ]
+    },
+    {
+      "group_id": "group_814a57608a2b767d",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N037.jpg"
+      ]
+    },
+    {
+      "group_id": "group_817b956c51bf2d93",
+      "paths": [
+        "data/ccsn/images/As/As-N123.jpg"
+      ]
+    },
+    {
+      "group_id": "group_822a9d3902702db7",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N151.jpg"
+      ]
+    },
+    {
+      "group_id": "group_82503ef528945b5a",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N192.jpg"
+      ]
+    },
+    {
+      "group_id": "group_8376aacd1f22589f",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/353e81020dca55f9.jpg"
+      ]
+    },
+    {
+      "group_id": "group_837949c5a6636db3",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/45121edb4d4720bc.jpg"
+      ]
+    },
+    {
+      "group_id": "group_846232d9900dd4a1",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N161.jpg"
+      ]
+    },
+    {
+      "group_id": "group_84a8dd7c830358de",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N126.jpg"
+      ]
+    },
+    {
+      "group_id": "group_8550e890f37e289e",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N075.jpg"
+      ]
+    },
+    {
+      "group_id": "group_8ad4dc9b21e7461d",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N083.jpg"
+      ]
+    },
+    {
+      "group_id": "group_8b945767cfd2a1f9",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/1df457b21e4f9397.jpg"
+      ]
+    },
+    {
+      "group_id": "group_8e963e5ddffb0c81",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N224.jpg"
+      ]
+    },
+    {
+      "group_id": "group_921bd314ee366f7d",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N046.jpg"
+      ]
+    },
+    {
+      "group_id": "group_92ed08d4e0185b04",
+      "paths": [
+        "data/ccsn/images/As/As-N030.jpg"
+      ]
+    },
+    {
+      "group_id": "group_947dbcdca842d77b",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N208.jpg"
+      ]
+    },
+    {
+      "group_id": "group_953107db6bc9a2e5",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N026.jpg"
+      ]
+    },
+    {
+      "group_id": "group_99265b0248c38901",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N235.jpg"
+      ]
+    },
+    {
+      "group_id": "group_9b31900177eb66bf",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N058.jpg",
+        "data/ccsn/images/Cc/Cc-N032.jpg"
+      ]
+    },
+    {
+      "group_id": "group_9d65c4eddddb1477",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N263.jpg"
+      ]
+    },
+    {
+      "group_id": "group_9ea95b6c27d2b164",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N220.jpg"
+      ]
+    },
+    {
+      "group_id": "group_9f623c141d70185b",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N042.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a0320dabdc66b0e4",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N279.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a0653836e2dc40e5",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N081.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a0e9c65072e03d01",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N160.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a29b6c232903736f",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N145.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a3c250a554948f28",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N152.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a3e419e819b8b54e",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N004.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a5f507c5341a1c7b",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N031.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a70bb1e238b1f71b",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N183.jpg",
+        "data/ccsn/images/Ns/Ns-N094.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a783721e9216402e",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N140.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a7c619af89f4a753",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/8134ecd11b86ef75.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a7fb56be6e2256c1",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N053.jpg"
+      ]
+    },
+    {
+      "group_id": "group_a911c39603df7f4f",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N148.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ab260fa62a1ffd21",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/20b17e07d25526b6.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ac408b3852d80825",
+      "paths": [
+        "data/ccsn/images/As/As-N154.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ac84a582e991db7b",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N202.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ae1e119447265d6b",
+      "paths": [
+        "data/ccsn/images/As/As-N151.jpg"
+      ]
+    },
+    {
+      "group_id": "group_aec57c4b22dd6957",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/9b8963c0048ec88b.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b0069dfa8a0c40e8",
+      "paths": [
+        "data/sociedad/cirrocumulus/Screenshot 2026-10-18 at 22-09-23 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_b0f3dc524c1b9a80",
+      "paths": [
+        "data/ccsn/images/St/St-N059.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b18e60356a1b6053",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N150.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b1b93ea45c9b5bae",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N234.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b391e36623f4fef3",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N142.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b3d991a06f12dfb0",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N108.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b40e9e9c340cf82a",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N133.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b459c079a2d19d0a",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/1c2db283bf38a5b2.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b659352bef34cad4",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N067.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b6c459d89a482250",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N040.jpg",
+        "data/ccsn/images/St/St-N084.jpg"
+      ]
+    },
+    {
+      "group_id": "group_b8b9c6488ac049ae",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N253.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ba38847c9fae9136",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N236.jpg"
+      ]
+    },
+    {
+      "group_id": "group_bb47f5f8f9373071",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N005.jpg",
+        "data/ccsn/images/Cu/Cu-N060.jpg"
+      ]
+    },
+    {
+      "group_id": "group_bccc0a47cd5bc5e9",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N114.jpg"
+      ]
+    },
+    {
+      "group_id": "group_bd0911c382a14b5e",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N057.jpg"
+      ]
+    },
+    {
+      "group_id": "group_be0532266a897010",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N260.jpg"
+      ]
+    },
+    {
+      "group_id": "group_bedc2393957958f6",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N138.jpg"
+      ]
+    },
+    {
+      "group_id": "group_bf39b40489d020a5",
+      "paths": [
+        "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-24-19 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_bf4df11483c2306c",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N106.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c25e9e2983f26c16",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N076.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c288286bd333e6e0",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N117.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c48f72f13851df3f",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N148.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c49d781b89b6fc37",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N132.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c4bcabc7c5a72cc9",
+      "paths": [
+        "data/ccsn/images/St/St-N035.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c53e82f05186a360",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N074.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c6ed607f12354ee4",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/2fae1af41b918fef.jpg"
+      ]
+    },
+    {
+      "group_id": "group_c73a62c3b49135df",
+      "paths": [
+        "data/ccsn/images/Ci/Ci-N053.jpg"
+      ]
+    },
+    {
+      "group_id": "group_cbdd3353378324aa",
+      "paths": [
+        "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-05-00 Photo Gallery - Cloud Appreciation Society.png",
+        "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-27-23 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_cbe78ffc7da8a99d",
+      "paths": [
+        "data/ccsn/images/St/St-N058.jpg"
+      ]
+    },
+    {
+      "group_id": "group_cc054a2da6667ea0",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N086.jpg"
+      ]
+    },
+    {
+      "group_id": "group_cd2dde43a6bea6dd",
+      "paths": [
+        "data/ccsn/images/Cc/Cc-N004.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ceb95cc892e5367e",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N234.jpg"
+      ]
+    },
+    {
+      "group_id": "group_cf52c98bb81e2c3d",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/c343515340ef676e.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d006a640ec9aaa6a",
+      "paths": [
+        "data/ccsn/images/As/As-N074.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d1d6077ce75d3204",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N226.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d222b22fb14c0be8",
+      "paths": [
+        "data/ccsn/images/no_nube/Ct-N125.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d226a8ed0ad67eda",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N044.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d49c8f9fb794065b",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N039.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d5c4b717fa9ba26a",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N212.jpg"
+      ]
+    },
+    {
+      "group_id": "group_d836000e91a9855d",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N056.jpg"
+      ]
+    },
+    {
+      "group_id": "group_da42d89d40d9ed60",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N010.jpg"
+      ]
+    },
+    {
+      "group_id": "group_dafaa32394913fb5",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N128.jpg"
+      ]
+    },
+    {
+      "group_id": "group_dcc51fd6771c6652",
+      "paths": [
+        "data/ccsn/images/As/As-N187.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ddf9a85dc453e380",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N049.jpg"
+      ]
+    },
+    {
+      "group_id": "group_df2a73f1438351db",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/b2338c96af8c3d3a.jpg"
+      ]
+    },
+    {
+      "group_id": "group_dfab622c9f989898",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N034.jpg"
+      ]
+    },
+    {
+      "group_id": "group_dfe03f56ad93cd7c",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N129.jpg"
+      ]
+    },
+    {
+      "group_id": "group_e16b31696629eb38",
+      "paths": [
+        "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-22-29 Photo Gallery - Cloud Appreciation Society.png"
+      ]
+    },
+    {
+      "group_id": "group_e506ee36d32d2127",
+      "paths": [
+        "data/ccsn/images/Ac/Ac-N201.jpg"
+      ]
+    },
+    {
+      "group_id": "group_e55147d575182ed5",
+      "paths": [
+        "data/ccsn/images/St/St-N076.jpg"
+      ]
+    },
+    {
+      "group_id": "group_e981fd1fc4a39a84",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N163.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ea6ad7f39fcf56e8",
+      "paths": [
+        "data/ccsn/images/Sc/Sc-N258.jpg"
+      ]
+    },
+    {
+      "group_id": "group_ec8851ede4f50fd3",
+      "paths": [
+        "data/ccsn/images/Ns/Ns-N232.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f1d9c5357278a018",
+      "paths": [
+        "data/ccsn/images/As/As-N112.jpg",
+        "data/ccsn/images/Ci/Ci-N083.jpg",
+        "data/ccsn/images/Cs/Cs-N155.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f458cbaaa6fcbcd5",
+      "paths": [
+        "data/ccsn/images/St/St-N104.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f4d38116f2cc6772",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/441bc8c4ae570f81.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f4ecaa6b017d50fa",
+      "paths": [
+        "data/ccsn/images/St/St-N173.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f5e71f7d888d53ee",
+      "paths": [
+        "data/ccsn/images/As/As-N152.jpg",
+        "data/ccsn/images/Cu/Cu-N008.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f5fea19f7695ae2c",
+      "paths": [
+        "data/ccsn/images/St/St-N197.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f6ab8340de340bb7",
+      "paths": [
+        "data/ccsn/images/Cs/Cs-N161.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f7155228207d0559",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N055.jpg"
+      ]
+    },
+    {
+      "group_id": "group_f9a5527aa8004610",
+      "paths": [
+        "data/ccsn/images/Cb/Cb-N076.jpg"
+      ]
+    },
+    {
+      "group_id": "group_fa98d4579d66d96b",
+      "paths": [
+        "data/ccsn/images/Cu/Cu-N181.jpg"
+      ]
+    },
+    {
+      "group_id": "group_fae01a9c65dfd687",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/19ad41f11e7dd911.jpg"
+      ]
+    },
+    {
+      "group_id": "group_fb3295ba173904ba",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/3045215d5a2844e1.jpg"
+      ]
+    },
+    {
+      "group_id": "group_fb747d6f1511fffd",
+      "paths": [
+        "data/no_nube/open-images-v7/validation/images/f8a7cd9ed2c66a44.jpg"
+      ]
+    }
+  ],
+  "group_size_counts": {
+    "validation": {
+      "1": 182,
+      "2": 13,
+      "3": 1,
+      "4": 0,
+      "5+": 0
+    },
+    "training_remainder": {
+      "1": 1687,
+      "2": 98,
+      "3": 9,
+      "4": 1,
+      "5+": 0
+    }
+  },
+  "class_group_counts": {
+    "validation": {
+      "cirrus": 11,
+      "cirrocumulus": 20,
+      "cirrostratus": 21,
+      "altocumulus": 17,
+      "altostratus": 14,
+      "nimbostratus": 20,
+      "stratocumulus": 25,
+      "stratus": 16,
+      "cumulus": 14,
+      "cumulonimbus": 18,
+      "no_nube": 35
+    },
+    "training_remainder": {
+      "cirrus": 100,
+      "cirrocumulus": 175,
+      "cirrostratus": 188,
+      "altocumulus": 155,
+      "altostratus": 126,
+      "nimbostratus": 172,
+      "stratocumulus": 225,
+      "stratus": 138,
+      "cumulus": 124,
+      "cumulonimbus": 162,
+      "no_nube": 306
+    }
+  }
+}

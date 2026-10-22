@@ -19,6 +19,9 @@ Proyecto para clasificar imágenes de nubes mediante técnicas de machine learni
 - **Grupo de parecido:** conjunto de imágenes relacionadas por autor conocido o similitud visual, que se mantiene unido al evaluar el clasificador.
 - **Partición de datos:** división del conjunto de imágenes en entrenamiento, calibración y prueba.
 - **Asignación congelada:** pertenencia de una imagen y su grupo a una partición que no cambia al incorporar datos posteriores.
+- **Validación:** subconjunto de entrenamiento separado por grupos de parecido y usado para elegir la época del modelo; no sustituye los conjuntos de calibración o prueba.
+- **Parada temprana:** criterio que detiene el entrenamiento cuando la métrica elegida sobre validación deja de mejorar durante un número configurado de épocas.
+- **Carpeta de corrida:** directorio local ignorado por Git que reúne los pesos, la configuración, las curvas y las métricas de una ejecución de entrenamiento.
 - **Significado:** lo que suele indicar ese tipo de nube.
 - **Entrenamiento:** proceso de ajuste del modelo a partir de datos.
 - **Inferencia:** uso de un modelo entrenado para predecir la clase de una imagen.

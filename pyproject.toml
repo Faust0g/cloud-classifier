@@ -13,6 +13,12 @@ dependencies = [
     "pillow>=12.3.0",
 ]
 
+[project.optional-dependencies]
+training = [
+    "timm>=1.0.15",
+    "torch>=2.7.0",
+]
+
 [project.scripts]
 cloud-classifier = "cloud_classifier:main"
 

@@ -12,6 +12,7 @@ Entornos virtuales de Python
 Modelos entrenados
 
 .onnx .pt
+runs/
 
 Caché de Python
 
