@@ -2,9 +2,8 @@
 
 ## Estado
 
-La exclusión y el set de doble etiqueta están aprobados y congelados. El
-candidato de validation-v2 está generado, pendiente de aprobación antes de
-congelar su manifiesto.
+La exclusión, el set de doble etiqueta y validation-v2 están aprobados y
+congelados.
 
 ## Contexto
 
@@ -38,9 +37,10 @@ evidencia, pero no determinan la exclusión.
   `exclusions-v1.json`; cualquier cambio invalida el archivo. No se usan modelos,
   métricas ni predicciones para asignar grupos. El entrenamiento requiere v2 y
   rechaza v1 explícitamente.
-- La aprobación y congelamiento de v2 son una etapa separada: el candidato y su
-  informe deben revisarse antes de crear `manifests/validation-v2.json`.
-- El candidato determinista actual selecciona 195 imágenes en 191 grupos.
+- `manifests/validation-v2.json` se congeló después de revisar y aprobar el
+  informe y candidato. Su SHA-256 es
+  `2077ee5459ed31129208eb6809702ff2a37ccb09b93f5ca4f625946b2905c3a0`.
+- El reparto determinista aprobado selecciona 195 imágenes en 191 grupos.
   Cirrus queda con 11 imágenes en 10 grupos, frente a 11/11 en v1 y 6/6 en v1
   tras exclusiones; todas las clases superan el mínimo de 8 grupos. Las
   proporciones multiimagen son 2,09% en validación y 1,92% en el resto de train.
