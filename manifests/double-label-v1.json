@@ -1,0 +1,2920 @@
+{
+  "double_label_version": 1,
+  "partition_sha256": "0ebcf4d3c72ce3344cb51a4024ff5e7333dc9fcfe7e6c5e6bd0c7d5c53c0eae6",
+  "photos": [
+    {
+      "group_id": "group_017067bf3749a5c3",
+      "classes": [
+        "altocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N216.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N216.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N192.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_02f9fb0bcba7681b",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N064.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N064.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N049.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_033faaacc84b69ce",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N192.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N192.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N133.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_08bcaaf44f8f3759",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N177.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N177.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N186.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_09280bf4f7a4a4a4",
+      "classes": [
+        "cirrostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N043.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N043.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N315.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_0a4786f549550803",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N059.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N059.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N033.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_0aba1ed53a3f3a6b",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N038.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N038.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N082.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_0f0ece4800c4feaa",
+      "classes": [
+        "cirrostratus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N022.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N022.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N173.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N086.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_102889cbe554e0e2",
+      "classes": [
+        "altostratus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N093.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N093.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N125.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_14397e38d728b29a",
+      "classes": [
+        "cirrostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N039.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N039.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N257.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_149fe7cf069d1cb5",
+      "classes": [
+        "altostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N110.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N110.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N074.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_15f3c8325cb6d495",
+      "classes": [
+        "cirrostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N010.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N010.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N023.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_160c975aa60f7a74",
+      "classes": [
+        "cirrostratus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N023.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N023.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N113.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N088.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_1a3c8fa65579c4b5",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-08 Photo Gallery - Cloud Appreciation Society.png",
+      "copies": [
+        {
+          "path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-08 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratocumulus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/stratus/Screenshot 2026-10-18 at 22-00-56 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_1b7a6db51116aab6",
+      "classes": [
+        "cirrostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N004.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N004.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N023.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_1bcab97809b1f7b0",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N059.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N059.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N118.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_1d3710ded5346bf1",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N062.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N062.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N121.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_273d79dce80e8df0",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N025.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N025.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N310.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_29baef8a008a9b44",
+      "classes": [
+        "cirrus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ci/Ci-N013.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N013.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N164.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_2b115154560e3ed9",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N068.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N068.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N173.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_2ed891626dc832e8",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N001.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N001.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N008.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_2f8a600812c0224c",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N067.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N067.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N129.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_31db20258986fbfa",
+      "classes": [
+        "altostratus",
+        "cumulonimbus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N032.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N032.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N082.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_381f924b8c3b4a97",
+      "classes": [
+        "cirrostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N164.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N164.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N165.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_3904c46e4a788ba2",
+      "classes": [
+        "cirrus",
+        "cumulonimbus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N202.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N202.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N042.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N030.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_39681a2f4831b6b8",
+      "classes": [
+        "altostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N028.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N028.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N003.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_3acd20b757c9f10f",
+      "classes": [
+        "cirrocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N026.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N026.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N124.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_3bf9b8a37c567462",
+      "classes": [
+        "altocumulus",
+        "altostratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N182.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N182.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N150.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_3f2c53f9bfadd75b",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N012.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N012.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N049.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_40a959b0b03ac2d8",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N092.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N092.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N059.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N136.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_42e94d4c1524a0e7",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N066.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N066.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N128.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_450fa340d8a7b9fb",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N026.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N026.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N311.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_47d4a1fd22c7ee4a",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N272.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N272.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N054.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_5345188c3e42aa92",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N156.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N156.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N052.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_54bc196fb368d217",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N176.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N176.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N234.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_57b2c18795e78346",
+      "classes": [
+        "altocumulus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N181.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N181.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N071.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_58f13bf323415b40",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N165.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N165.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N215.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_5cb418bb727095b8",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N222.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N222.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N048.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_60ba6473d79c73f4",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N155.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N155.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N047.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_618eb50a385231df",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N113.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N113.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N063.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_61bbc8c9041639ef",
+      "classes": [
+        "cirrus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ci/Ci-N035.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N035.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N159.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_6492735d1efe812f",
+      "classes": [
+        "altocumulus",
+        "nimbostratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N208.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N208.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N137.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_64fe896b3fd6e79b",
+      "classes": [
+        "cumulus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cu/Cu-N004.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cu/Cu-N004.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N213.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_698977b1a01ddd40",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N117.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N117.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N038.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_6be40d205a61dad7",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N174.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N174.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N228.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_6c5c91d72930e32d",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N057.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N057.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N115.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_6e81c6c067ce8b5e",
+      "classes": [
+        "altostratus",
+        "nimbostratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N136.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N136.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N100.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_7165475fbfb7b4c4",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N206.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N206.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N144.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_76e8dbf312725a58",
+      "classes": [
+        "altostratus",
+        "cumulonimbus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N159.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N159.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N007.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_791acdc69541d9d2",
+      "classes": [
+        "altocumulus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N005.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N005.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N180.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_7ab8fa360a791bd4",
+      "classes": [
+        "altocumulus",
+        "altostratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N006.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N006.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N014.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_7aba60851cec65b0",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N230.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N230.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N058.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_7bf9c85cce7d2746",
+      "classes": [
+        "altostratus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N149.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N149.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N182.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_7f65695d2caf0723",
+      "classes": [
+        "altostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N145.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N145.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N172.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_7ff5f8753511fc1d",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N063.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N063.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N122.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_811aa2c58e43a635",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N023.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N023.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N081.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_8342dd30b903fa34",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N003.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N003.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N011.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_846dc7deb8c4f985",
+      "classes": [
+        "cirrostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N042.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N042.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N293.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_852a3feb214b7e99",
+      "classes": [
+        "cirrostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-22-15 Photo Gallery - Cloud Appreciation Society.png",
+      "copies": [
+        {
+          "path": "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-22-15 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "cirrostratus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/cirrus/Screenshot 2026-10-18 at 21-46-35 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "cirrus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_88d7480ec497f58c",
+      "classes": [
+        "altostratus",
+        "cumulonimbus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N148.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N148.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N019.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_8cc92bffbb42664d",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N141.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N141.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N044.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_8e611bb3cb9c221e",
+      "classes": [
+        "altostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N010.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N010.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N099.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_8ed411b42993d8d1",
+      "classes": [
+        "altostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N003.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N003.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N145.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_919b9f93ba792541",
+      "classes": [
+        "cirrostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N016.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N016.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N079.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_9417679c4c27379f",
+      "classes": [
+        "altostratus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N092.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N092.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N124.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_95aea0883b792c53",
+      "classes": [
+        "cirrocumulus",
+        "nimbostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N132.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N132.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N111.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_9b31900177eb66bf",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N058.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N058.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N032.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_9c5a2a78574674ee",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N011.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N011.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N230.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_9d3b40307372cd5a",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N219.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N219.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N036.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_9d5daecae6447175",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N120.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N120.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N041.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a2d65b2690d4e138",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N259.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N259.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N053.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a39ca76f9fbdbce2",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N061.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N061.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N120.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a5168942f417353e",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N027.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N027.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N094.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N125.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a522a7ba83f376df",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N009.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N009.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N189.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a52ab9899590b02b",
+      "classes": [
+        "altostratus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N134.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N134.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N175.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a55d1f681b89bf1f",
+      "classes": [
+        "cumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Cu/Cu-N018.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cu/Cu-N018.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N088.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a5cd992de72e5e69",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N013.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N013.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N029.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a70bb1e238b1f71b",
+      "classes": [
+        "altocumulus",
+        "nimbostratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N183.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N183.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N094.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a82816da1458af3a",
+      "classes": [
+        "altostratus",
+        "nimbostratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N108.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N108.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N087.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_a8bc881a2a7d69ac",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N058.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N058.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N116.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_aa3204e241ad8ed0",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N213.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N213.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N026.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_aec5ac9cbae86c11",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus",
+        "nimbostratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N171.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N171.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N109.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N090.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_af19e826f29a5e78",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N189.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N189.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N242.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_af5a256daca42288",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N013.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N013.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N012.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_b08ddc0e2958868f",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N056.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N056.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N114.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_b1d626429e91c7be",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N142.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N142.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N045.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_b4dd87dcb0938fd4",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N022.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N022.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N206.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N284.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_b6c459d89a482250",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N040.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N040.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N084.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_ba7d884512ab4b88",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N006.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N006.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N047.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_bb47f5f8f9373071",
+      "classes": [
+        "cirrus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ci/Ci-N005.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N005.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N060.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_bf6b0117d6fadae7",
+      "classes": [
+        "altocumulus",
+        "altostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N186.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N186.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N139.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N141.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N171.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_bfe6362f14e5f322",
+      "classes": [
+        "cirrus",
+        "no_nube"
+      ],
+      "representative_path": "data/ccsn/images/Ci/Ci-N024.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N024.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/no_nube/Ct-N128.jpg",
+          "class_id": "no_nube",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_c2e7f66807437427",
+      "classes": [
+        "altostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N075.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N075.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N113.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_c541e1cdb0f293cc",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N145.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N145.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N017.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_c73a2dbbd8533d5e",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N143.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N143.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N023.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_c7995c7beb77b465",
+      "classes": [
+        "cirrostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cs/Cs-N038.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N038.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N256.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_c90a75eafa9dcde9",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N064.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N064.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N112.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N123.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_ca32a654fdc259e2",
+      "classes": [
+        "altostratus",
+        "cirrostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N111.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N111.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N079.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N153.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_cb3f973a93f65557",
+      "classes": [
+        "altocumulus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N023.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N023.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N003.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_cbdd3353378324aa",
+      "classes": [
+        "altocumulus",
+        "cumulonimbus"
+      ],
+      "representative_path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-05-00 Photo Gallery - Cloud Appreciation Society.png",
+      "copies": [
+        {
+          "path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-05-00 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altocumulus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-27-23 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "cumulonimbus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_ced0317de0b525df",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N039.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N039.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N093.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N083.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d0114d09a6fd1d4e",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N143.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N143.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N046.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d07d01bd4dfce30f",
+      "classes": [
+        "cirrostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/ccsn/images/Ci/Ci-N062.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N062.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N150.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d08e97f5ee3cc4ae",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N122.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N122.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N167.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d11febe9bf7778bb",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N121.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N121.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N166.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d208955cb7578b99",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N020.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N020.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N072.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d3033f8a4a6bb2cc",
+      "classes": [
+        "altostratus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N137.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N137.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N131.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d4e22606ccc5f24c",
+      "classes": [
+        "altocumulus",
+        "cirrocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N154.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N154.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N046.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d6a6e5d9f98cbc57",
+      "classes": [
+        "altocumulus",
+        "altostratus"
+      ],
+      "representative_path": "data/ccsn/images/Ac/Ac-N202.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N202.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N175.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_d9b30c7be46ce487",
+      "classes": [
+        "cumulonimbus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cb/Cb-N214.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N214.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N007.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_dbbcdebf6ecddd58",
+      "classes": [
+        "altostratus",
+        "cumulonimbus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N019.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N019.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N212.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_dd87c22b8c1e2334",
+      "classes": [
+        "cirrus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ci/Ci-N033.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N033.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N157.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_de879b39ef05ce44",
+      "classes": [
+        "cirrocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N148.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N148.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N182.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_e4296989052835fd",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N065.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N065.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N126.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_e4e7327b81bcaff0",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N012.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N012.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N231.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_e56bc98d9e66865c",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Sc/Sc-N007.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N007.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N004.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_e68dcda2529c190c",
+      "classes": [
+        "cumulus",
+        "stratocumulus"
+      ],
+      "representative_path": "data/ccsn/images/Cu/Cu-N021.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cu/Cu-N021.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N277.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_e90cbbde5454fcb1",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N179.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N179.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N244.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_ebf5f9b2aa5b3df1",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N060.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N060.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N119.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_f0124bb78b773b8a",
+      "classes": [
+        "altocumulus",
+        "altostratus"
+      ],
+      "representative_path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-28 Photo Gallery - Cloud Appreciation Society.png",
+      "copies": [
+        {
+          "path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-28 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altocumulus",
+          "source": "sociedad",
+          "split": "calibration"
+        },
+        {
+          "path": "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-05-30 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altostratus",
+          "source": "sociedad",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_f1d9c5357278a018",
+      "classes": [
+        "altostratus",
+        "cirrostratus",
+        "cirrus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N112.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N112.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N083.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N155.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_f58466972ac5a207",
+      "classes": [
+        "nimbostratus",
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N004.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N004.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N044.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N021.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_f5d555a6e237c908",
+      "classes": [
+        "cirrocumulus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/Cc/Cc-N180.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N180.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N241.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_f5e71f7d888d53ee",
+      "classes": [
+        "altostratus",
+        "cumulus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N152.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N152.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N008.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_fa91da4f67dae921",
+      "classes": [
+        "nimbostratus",
+        "stratus"
+      ],
+      "representative_path": "data/ccsn/images/Ns/Ns-N175.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N175.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N185.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ]
+    },
+    {
+      "group_id": "group_fb3cddd7aa4d4cb5",
+      "classes": [
+        "stratocumulus",
+        "stratus"
+      ],
+      "representative_path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-16 Photo Gallery - Cloud Appreciation Society.png",
+      "copies": [
+        {
+          "path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-16 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratocumulus",
+          "source": "sociedad",
+          "split": "test"
+        },
+        {
+          "path": "data/sociedad/stratus/Screenshot 2026-10-18 at 22-00-58 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratus",
+          "source": "sociedad",
+          "split": "test"
+        }
+      ]
+    },
+    {
+      "group_id": "group_fc6b8a67c2fb1cc9",
+      "classes": [
+        "altostratus",
+        "cirrostratus"
+      ],
+      "representative_path": "data/ccsn/images/As/As-N043.jpg",
+      "copies": [
+        {
+          "path": "data/ccsn/images/As/As-N043.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N087.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N114.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "group_id": "group_fffc6c4874436ebe",
+      "classes": [
+        "altocumulus",
+        "altostratus"
+      ],
+      "representative_path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-30 Photo Gallery - Cloud Appreciation Society.png",
+      "copies": [
+        {
+          "path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-30 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altocumulus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-05-32 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altostratus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ]
+    }
+  ]
+}

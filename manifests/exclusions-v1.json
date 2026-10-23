@@ -1,0 +1,4471 @@
+{
+  "exclusions_version": 1,
+  "partition_sha256": "0ebcf4d3c72ce3344cb51a4024ff5e7333dc9fcfe7e6c5e6bd0c7d5c53c0eae6",
+  "groups": [
+    {
+      "group_id": "group_017067bf3749a5c3",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N216.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N192.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N216.jpg",
+            "right_path": "data/ccsn/images/St/St-N192.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.7758496245402986,
+            "mae_rgb_normalized": 0.03470339307598039,
+            "left_luminance_std": 0.12430876444550189,
+            "right_luminance_std": 0.11845810990244367
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_02f9fb0bcba7681b",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N064.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N049.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N064.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N049.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9867963315518647,
+            "mae_rgb_normalized": 0.0009970870672487745,
+            "left_luminance_std": 0.2307006508331117,
+            "right_luminance_std": 0.23106455212959562
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_033faaacc84b69ce",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N192.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N133.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N192.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N133.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9909160232344352,
+            "mae_rgb_normalized": 0.0014205234502655234,
+            "left_luminance_std": 0.17349237770658793,
+            "right_luminance_std": 0.17349358796200678
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_08bcaaf44f8f3759",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N177.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N186.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N177.jpg",
+            "right_path": "data/ccsn/images/St/St-N186.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9875051087272858,
+            "mae_rgb_normalized": 0.0020471111621732027,
+            "left_luminance_std": 0.21148323377795458,
+            "right_luminance_std": 0.21150109342376255
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_09280bf4f7a4a4a4",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N043.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N315.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N043.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N315.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9926839797602757,
+            "mae_rgb_normalized": 0.0004423453137765523,
+            "left_luminance_std": 0.3101794055934004,
+            "right_luminance_std": 0.3103544417946621
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_0a4786f549550803",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N059.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N033.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N059.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N033.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9816892220994152,
+            "mae_rgb_normalized": 0.0026101505055147055,
+            "left_luminance_std": 0.2187584151627383,
+            "right_luminance_std": 0.21850907309946913
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_0aba1ed53a3f3a6b",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N038.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N082.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N038.jpg",
+            "right_path": "data/ccsn/images/St/St-N082.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9879318542853833,
+            "mae_rgb_normalized": 0.0017106797960069443,
+            "left_luminance_std": 0.1652996805441189,
+            "right_luminance_std": 0.16503833078097646
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_0f0ece4800c4feaa",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N022.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N173.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N086.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N022.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N173.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9596781367452266,
+            "mae_rgb_normalized": 0.007539337756587009,
+            "left_luminance_std": 0.15688921400778846,
+            "right_luminance_std": 0.1564272285419199
+          },
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N022.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N086.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.963067652371647,
+            "mae_rgb_normalized": 0.0072286967358558,
+            "left_luminance_std": 0.15688921400778846,
+            "right_luminance_std": 0.1567381486249964
+          },
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N173.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N086.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9937636302124323,
+            "mae_rgb_normalized": 0.0005199955958946078,
+            "left_luminance_std": 0.1564272285419199,
+            "right_luminance_std": 0.1567381486249964
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_102889cbe554e0e2",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N093.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N125.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N093.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N125.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.8350791853561832,
+            "mae_rgb_normalized": 0.02288150164036969,
+            "left_luminance_std": 0.22357237959169654,
+            "right_luminance_std": 0.2185809317147913
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_14397e38d728b29a",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N039.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N257.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N039.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N257.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9987153312997137,
+            "mae_rgb_normalized": 0.00012659808389501635,
+            "left_luminance_std": 0.17032782179007538,
+            "right_luminance_std": 0.170307553279711
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_149fe7cf069d1cb5",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N110.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N074.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N110.jpg",
+            "right_path": "data/ccsn/images/Ci/Ci-N074.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9950138469235479,
+            "mae_rgb_normalized": 0.001112994025735294,
+            "left_luminance_std": 0.1941432609101621,
+            "right_luminance_std": 0.1945390716917441
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_15f3c8325cb6d495",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N010.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N023.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 8,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N010.jpg",
+            "right_path": "data/ccsn/images/St/St-N023.jpg",
+            "hamming_distance": 8,
+            "ssim": 0.9869509843353859,
+            "mae_rgb_normalized": 0.0015706180747038399,
+            "left_luminance_std": 0.30248587019074835,
+            "right_luminance_std": 0.30321186148001145
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_160c975aa60f7a74",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N023.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N113.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N088.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N023.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N113.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9613062443284045,
+            "mae_rgb_normalized": 0.007350368125765931,
+            "left_luminance_std": 0.16355716230120954,
+            "right_luminance_std": 0.16295703891098423
+          },
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N023.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N088.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9646689461740303,
+            "mae_rgb_normalized": 0.007022633272058823,
+            "left_luminance_std": 0.16355716230120954,
+            "right_luminance_std": 0.1633083026257525
+          },
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N113.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N088.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9934103091829246,
+            "mae_rgb_normalized": 0.0005507724737030228,
+            "left_luminance_std": 0.16295703891098423,
+            "right_luminance_std": 0.1633083026257525
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_1a3c8fa65579c4b5",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-08 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratocumulus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/stratus/Screenshot 2026-10-18 at 22-00-56 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-08 Photo Gallery - Cloud Appreciation Society.png",
+            "right_path": "data/sociedad/stratus/Screenshot 2026-10-18 at 22-00-56 Photo Gallery - Cloud Appreciation Society.png",
+            "hamming_distance": 0,
+            "ssim": 1.0,
+            "mae_rgb_normalized": 0.0,
+            "left_luminance_std": 0.2786874864777822,
+            "right_luminance_std": 0.2786874864777822
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_1b7a6db51116aab6",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N004.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N023.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N004.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N023.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9892271645056047,
+            "mae_rgb_normalized": 0.0009601867276858661,
+            "left_luminance_std": 0.3023228797957391,
+            "right_luminance_std": 0.3027238718068581
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_1bcab97809b1f7b0",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N059.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N118.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N059.jpg",
+            "right_path": "data/ccsn/images/St/St-N118.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9827866997309563,
+            "mae_rgb_normalized": 0.0029990002999897877,
+            "left_luminance_std": 0.14879999898936563,
+            "right_luminance_std": 0.14856664442043743
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_1d3710ded5346bf1",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N062.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N121.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N062.jpg",
+            "right_path": "data/ccsn/images/St/St-N121.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9842358476790501,
+            "mae_rgb_normalized": 0.002405144186580882,
+            "left_luminance_std": 0.12806051989198117,
+            "right_luminance_std": 0.1281042818552962
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_273d79dce80e8df0",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N025.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N310.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N025.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N310.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9989119318556624,
+            "mae_rgb_normalized": 0.00024224574269812095,
+            "left_luminance_std": 0.18988873514249108,
+            "right_luminance_std": 0.18996919029636763
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_29baef8a008a9b44",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N013.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N164.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N013.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N164.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9918959117989257,
+            "mae_rgb_normalized": 0.0007371690538194444,
+            "left_luminance_std": 0.16321089777545297,
+            "right_luminance_std": 0.16346363014481813
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_2b115154560e3ed9",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N068.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N173.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N068.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N173.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9884567163525052,
+            "mae_rgb_normalized": 0.000816794002757353,
+            "left_luminance_std": 0.13039118449975093,
+            "right_luminance_std": 0.13052251669954956
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_2ed891626dc832e8",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N001.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N008.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N001.jpg",
+            "right_path": "data/ccsn/images/St/St-N008.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9970519184522869,
+            "mae_rgb_normalized": 0.000328213560814951,
+            "left_luminance_std": 0.2801041901283875,
+            "right_luminance_std": 0.27970179865500444
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_2f8a600812c0224c",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N067.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N129.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N067.jpg",
+            "right_path": "data/ccsn/images/St/St-N129.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9835245346778875,
+            "mae_rgb_normalized": 0.001492528977736928,
+            "left_luminance_std": 0.33858350251751873,
+            "right_luminance_std": 0.3376659386540524
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_31db20258986fbfa",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N032.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N082.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N032.jpg",
+            "right_path": "data/ccsn/images/Cb/Cb-N082.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9993559371579778,
+            "mae_rgb_normalized": 4.81699027267157e-05,
+            "left_luminance_std": 0.16599756993434447,
+            "right_luminance_std": 0.16599968176725421
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_381f924b8c3b4a97",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N164.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N165.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N164.jpg",
+            "right_path": "data/ccsn/images/St/St-N165.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9973800704297061,
+            "mae_rgb_normalized": 0.0003453073937908496,
+            "left_luminance_std": 0.22583374493586592,
+            "right_luminance_std": 0.22595818635644155
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_3904c46e4a788ba2",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N202.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N042.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N030.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N202.jpg",
+            "right_path": "data/ccsn/images/Ci/Ci-N042.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9973882438418826,
+            "mae_rgb_normalized": 0.00028347439236111113,
+            "left_luminance_std": 0.10433223064753439,
+            "right_luminance_std": 0.104323462815795
+          },
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N202.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N030.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9729283885934442,
+            "mae_rgb_normalized": 0.005827142054738562,
+            "left_luminance_std": 0.10433223064753439,
+            "right_luminance_std": 0.10445170312373728
+          },
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N042.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N030.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9716962605293104,
+            "mae_rgb_normalized": 0.005926194533803105,
+            "left_luminance_std": 0.104323462815795,
+            "right_luminance_std": 0.10445170312373728
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_39681a2f4831b6b8",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N028.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N003.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N028.jpg",
+            "right_path": "data/ccsn/images/Ci/Ci-N003.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.997165640423947,
+            "mae_rgb_normalized": 0.00019200144250408496,
+            "left_luminance_std": 0.16444876547813334,
+            "right_luminance_std": 0.1644648146300177
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_3acd20b757c9f10f",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N026.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N124.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N026.jpg",
+            "right_path": "data/ccsn/images/St/St-N124.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9901091725330473,
+            "mae_rgb_normalized": 0.0008242937474468954,
+            "left_luminance_std": 0.14478076021727307,
+            "right_luminance_std": 0.1442998775345921
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_3bf9b8a37c567462",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N182.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N150.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N182.jpg",
+            "right_path": "data/ccsn/images/As/As-N150.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9995560935190989,
+            "mae_rgb_normalized": 7.41796555861928e-05,
+            "left_luminance_std": 0.196140659037786,
+            "right_luminance_std": 0.19617552541257108
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_3f2c53f9bfadd75b",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N012.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N049.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N012.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N049.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9979873331588772,
+            "mae_rgb_normalized": 0.00029979032628676467,
+            "left_luminance_std": 0.13436257376675703,
+            "right_luminance_std": 0.13431373625003046
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_40a959b0b03ac2d8",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N092.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N059.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N136.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N092.jpg",
+            "right_path": "data/ccsn/images/Ci/Ci-N059.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9888223636850516,
+            "mae_rgb_normalized": 0.0009959301917381537,
+            "left_luminance_std": 0.11744588981181141,
+            "right_luminance_std": 0.11720505726217935
+          },
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N092.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N136.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9905666948272684,
+            "mae_rgb_normalized": 0.0007685642616421568,
+            "left_luminance_std": 0.11744588981181141,
+            "right_luminance_std": 0.1173424669100469
+          },
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N059.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N136.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9905477154999938,
+            "mae_rgb_normalized": 0.000840829088796977,
+            "left_luminance_std": 0.11720505726217935,
+            "right_luminance_std": 0.1173424669100469
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_42e94d4c1524a0e7",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N066.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N128.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N066.jpg",
+            "right_path": "data/ccsn/images/St/St-N128.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9898227525511722,
+            "mae_rgb_normalized": 0.001106671102685866,
+            "left_luminance_std": 0.30417252870632083,
+            "right_luminance_std": 0.3039209009253771
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_450fa340d8a7b9fb",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N026.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N311.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N026.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N311.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9959559793786893,
+            "mae_rgb_normalized": 0.0003335591235191994,
+            "left_luminance_std": 0.21279690561500736,
+            "right_luminance_std": 0.21263751043761148
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_47d4a1fd22c7ee4a",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N272.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N054.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N272.jpg",
+            "right_path": "data/ccsn/images/St/St-N054.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9963705275273748,
+            "mae_rgb_normalized": 0.00028475094464869283,
+            "left_luminance_std": 0.31927759313406645,
+            "right_luminance_std": 0.3193098582947056
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_5345188c3e42aa92",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N156.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N052.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N156.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N052.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9985068232111439,
+            "mae_rgb_normalized": 0.0004294401679942811,
+            "left_luminance_std": 0.09338031381360089,
+            "right_luminance_std": 0.09336602251222181
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_54bc196fb368d217",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N176.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N234.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N176.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N234.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9926358344265748,
+            "mae_rgb_normalized": 0.0006629495059742647,
+            "left_luminance_std": 0.08659550071921326,
+            "right_luminance_std": 0.08686490698156624
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_57b2c18795e78346",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N181.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N071.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N181.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N071.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9713136303930799,
+            "mae_rgb_normalized": 0.006139578227124183,
+            "left_luminance_std": 0.2502234381008808,
+            "right_luminance_std": 0.25047572276347807
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_58f13bf323415b40",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N165.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N215.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N165.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N215.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9913470236702082,
+            "mae_rgb_normalized": 0.0007953319674223855,
+            "left_luminance_std": 0.1756520411364947,
+            "right_luminance_std": 0.17561454028341728
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_5cb418bb727095b8",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N222.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N048.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N222.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N048.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9874067077337133,
+            "mae_rgb_normalized": 0.0008690728081597221,
+            "left_luminance_std": 0.12959750039875506,
+            "right_luminance_std": 0.1297013766253251
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_60ba6473d79c73f4",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N155.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N047.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N155.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N047.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.5419851980196909,
+            "mae_rgb_normalized": 0.05951504177517361,
+            "left_luminance_std": 0.16594131485310604,
+            "right_luminance_std": 0.15594491995954518
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_618eb50a385231df",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N113.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N063.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N113.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N063.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9968960283707909,
+            "mae_rgb_normalized": 0.0002687541487949346,
+            "left_luminance_std": 0.18366506131228774,
+            "right_luminance_std": 0.18353236602541698
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_61bbc8c9041639ef",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N035.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N159.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N035.jpg",
+            "right_path": "data/ccsn/images/St/St-N159.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9870955441346876,
+            "mae_rgb_normalized": 0.0013609842537275327,
+            "left_luminance_std": 0.17080808069165032,
+            "right_luminance_std": 0.17130612798702963
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_6492735d1efe812f",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N208.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N137.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N208.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N137.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.7346881888075449,
+            "mae_rgb_normalized": 0.03514767316431781,
+            "left_luminance_std": 0.1781816122836705,
+            "right_luminance_std": 0.17293648717281052
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_64fe896b3fd6e79b",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cu/Cu-N004.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N213.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cu/Cu-N004.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N213.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9546306110349185,
+            "mae_rgb_normalized": 0.007519112381280637,
+            "left_luminance_std": 0.30678077364159523,
+            "right_luminance_std": 0.3066599824867528
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_698977b1a01ddd40",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N117.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N038.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N117.jpg",
+            "right_path": "data/ccsn/images/St/St-N038.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9868835741495726,
+            "mae_rgb_normalized": 0.001005624010671977,
+            "left_luminance_std": 0.22383583009674135,
+            "right_luminance_std": 0.22411127261739638
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_6be40d205a61dad7",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N174.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N228.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N174.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N228.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9978825918517229,
+            "mae_rgb_normalized": 0.00033202327154820263,
+            "left_luminance_std": 0.2355739172862539,
+            "right_luminance_std": 0.23590197484572453
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_6c5c91d72930e32d",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N057.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N115.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N057.jpg",
+            "right_path": "data/ccsn/images/St/St-N115.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9848946937482372,
+            "mae_rgb_normalized": 0.0024064406849979574,
+            "left_luminance_std": 0.2665273942234059,
+            "right_luminance_std": 0.2660006597674357
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_6e81c6c067ce8b5e",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N136.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N100.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N136.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N100.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9871630064048569,
+            "mae_rgb_normalized": 0.0015839221430759803,
+            "left_luminance_std": 0.09676554171050086,
+            "right_luminance_std": 0.09704406686327798
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_7165475fbfb7b4c4",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N206.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N144.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N206.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N144.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9990773502887581,
+            "mae_rgb_normalized": 0.0003390642552593954,
+            "left_luminance_std": 0.09445249038865311,
+            "right_luminance_std": 0.0944667278354753
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_76e8dbf312725a58",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N159.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N007.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N159.jpg",
+            "right_path": "data/ccsn/images/Cb/Cb-N007.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9975482297122316,
+            "mae_rgb_normalized": 0.0002223395054636438,
+            "left_luminance_std": 0.22589197674522168,
+            "right_luminance_std": 0.22586317869092878
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_791acdc69541d9d2",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N005.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N180.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N005.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N180.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.6701872541672209,
+            "mae_rgb_normalized": 0.04409724216835172,
+            "left_luminance_std": 0.187821241417394,
+            "right_luminance_std": 0.19146200035575459
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_7ab8fa360a791bd4",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N006.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N014.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N006.jpg",
+            "right_path": "data/ccsn/images/As/As-N014.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.7208569765508508,
+            "mae_rgb_normalized": 0.039894832037632756,
+            "left_luminance_std": 0.2144793205259375,
+            "right_luminance_std": 0.21715610747061714
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_7aba60851cec65b0",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N230.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N058.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N230.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N058.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9955604716521753,
+            "mae_rgb_normalized": 0.0003492567274305555,
+            "left_luminance_std": 0.1119078837178273,
+            "right_luminance_std": 0.11171796872970292
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_7bf9c85cce7d2746",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N149.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N182.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N149.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N182.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9987870507732467,
+            "mae_rgb_normalized": 0.0001440509472017974,
+            "left_luminance_std": 0.20920135737015583,
+            "right_luminance_std": 0.20923529640425387
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_7f65695d2caf0723",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N145.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N172.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N145.jpg",
+            "right_path": "data/ccsn/images/St/St-N172.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9974202918854314,
+            "mae_rgb_normalized": 0.0007480995327818628,
+            "left_luminance_std": 0.16234738408559504,
+            "right_luminance_std": 0.16238721189680644
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_7ff5f8753511fc1d",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N063.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N122.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N063.jpg",
+            "right_path": "data/ccsn/images/St/St-N122.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9927434544062161,
+            "mae_rgb_normalized": 0.0014918907015931372,
+            "left_luminance_std": 0.08442315274869423,
+            "right_luminance_std": 0.08477316044313525
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_811aa2c58e43a635",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N023.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N081.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N023.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N081.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9959103179530965,
+            "mae_rgb_normalized": 0.0002948037939133987,
+            "left_luminance_std": 0.32051481950783073,
+            "right_luminance_std": 0.32077186381683465
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_8342dd30b903fa34",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N003.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N011.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N003.jpg",
+            "right_path": "data/ccsn/images/St/St-N011.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9913342349782694,
+            "mae_rgb_normalized": 0.000701605104932598,
+            "left_luminance_std": 0.21028471815678745,
+            "right_luminance_std": 0.21052385878369229
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_846dc7deb8c4f985",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N042.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N293.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N042.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N293.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9969602804661265,
+            "mae_rgb_normalized": 0.00024076972911560456,
+            "left_luminance_std": 0.18264783068197332,
+            "right_luminance_std": 0.18271499217973264
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_852a3feb214b7e99",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-22-15 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "cirrostratus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/cirrus/Screenshot 2026-10-18 at 21-46-35 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "cirrus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/sociedad/cirrostratus/Screenshot 2026-10-18 at 22-22-15 Photo Gallery - Cloud Appreciation Society.png",
+            "right_path": "data/sociedad/cirrus/Screenshot 2026-10-18 at 21-46-35 Photo Gallery - Cloud Appreciation Society.png",
+            "hamming_distance": 0,
+            "ssim": 0.9999912545036899,
+            "mae_rgb_normalized": 2.373589409722222e-06,
+            "left_luminance_std": 0.25442309528927315,
+            "right_luminance_std": 0.2544223281082822
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_88d7480ec497f58c",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N148.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N019.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N148.jpg",
+            "right_path": "data/ccsn/images/Cb/Cb-N019.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9946796446206877,
+            "mae_rgb_normalized": 0.0005140317031760621,
+            "left_luminance_std": 0.19058661249586256,
+            "right_luminance_std": 0.19027669731729024
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_8cc92bffbb42664d",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N141.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N044.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 8,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N141.jpg",
+            "right_path": "data/ccsn/images/St/St-N044.jpg",
+            "hamming_distance": 8,
+            "ssim": 0.9787916977505627,
+            "mae_rgb_normalized": 0.00299688601026348,
+            "left_luminance_std": 0.1607944045065146,
+            "right_luminance_std": 0.16154873397338165
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_8e611bb3cb9c221e",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N010.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N099.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N010.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N099.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9664603927596517,
+            "mae_rgb_normalized": 0.006848463669321896,
+            "left_luminance_std": 0.15913737403337308,
+            "right_luminance_std": 0.15935554528612939
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_8ed411b42993d8d1",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N003.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N145.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N003.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N145.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.966973534614577,
+            "mae_rgb_normalized": 0.005570176068474264,
+            "left_luminance_std": 0.070441580499847,
+            "right_luminance_std": 0.07101858432019709
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_919b9f93ba792541",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N016.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N079.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N016.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N079.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9913009530405157,
+            "mae_rgb_normalized": 0.0011471417994281046,
+            "left_luminance_std": 0.23380143752393998,
+            "right_luminance_std": 0.23400868596064536
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_9417679c4c27379f",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N092.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N124.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N092.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N124.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9573878149218534,
+            "mae_rgb_normalized": 0.004882034600949755,
+            "left_luminance_std": 0.034563480975769036,
+            "right_luminance_std": 0.033830901773526253
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_95aea0883b792c53",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N132.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N111.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N132.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N111.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.999551508753871,
+            "mae_rgb_normalized": 7.342170266544117e-05,
+            "left_luminance_std": 0.23988721893360987,
+            "right_luminance_std": 0.23989957125837363
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_9b31900177eb66bf",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N058.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N032.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N058.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N032.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9857164185895542,
+            "mae_rgb_normalized": 0.001988329918555964,
+            "left_luminance_std": 0.17709941256435147,
+            "right_luminance_std": 0.17722420779365886
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_9c5a2a78574674ee",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N011.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N230.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N011.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N230.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9926947436273766,
+            "mae_rgb_normalized": 0.0005862167458129086,
+            "left_luminance_std": 0.1740509932790488,
+            "right_luminance_std": 0.17370015456472895
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_9d3b40307372cd5a",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N219.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N036.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N219.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N036.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9983991724676847,
+            "mae_rgb_normalized": 0.00012246923508986928,
+            "left_luminance_std": 0.24535880474460653,
+            "right_luminance_std": 0.2453472603572857
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_9d5daecae6447175",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N120.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N041.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N120.jpg",
+            "right_path": "data/ccsn/images/St/St-N041.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9955144710757032,
+            "mae_rgb_normalized": 0.0006680557151245915,
+            "left_luminance_std": 0.2735387896843999,
+            "right_luminance_std": 0.27399075321420485
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a2d65b2690d4e138",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N259.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N053.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N259.jpg",
+            "right_path": "data/ccsn/images/St/St-N053.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9949851339416772,
+            "mae_rgb_normalized": 0.00032891167534722225,
+            "left_luminance_std": 0.309022255236285,
+            "right_luminance_std": 0.309358096817189
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a39ca76f9fbdbce2",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N061.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N120.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N061.jpg",
+            "right_path": "data/ccsn/images/St/St-N120.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9818150873976782,
+            "mae_rgb_normalized": 0.003372232275071487,
+            "left_luminance_std": 0.11374464726733247,
+            "right_luminance_std": 0.11106552837606008
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a5168942f417353e",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N027.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N094.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N125.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N027.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N094.jpg",
+            "hamming_distance": 6,
+            "ssim": 0.9871988950007479,
+            "mae_rgb_normalized": 0.002496178321589052,
+            "left_luminance_std": 0.2310211093091688,
+            "right_luminance_std": 0.2308057199270202
+          },
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N027.jpg",
+            "right_path": "data/ccsn/images/St/St-N125.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9898184407081848,
+            "mae_rgb_normalized": 0.0013491960911968953,
+            "left_luminance_std": 0.2310211093091688,
+            "right_luminance_std": 0.23136429430923078
+          },
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N094.jpg",
+            "right_path": "data/ccsn/images/St/St-N125.jpg",
+            "hamming_distance": 8,
+            "ssim": 0.9866703743708657,
+            "mae_rgb_normalized": 0.0025880900862949347,
+            "left_luminance_std": 0.2308057199270202,
+            "right_luminance_std": 0.23136429430923078
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a522a7ba83f376df",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N009.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N189.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N009.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N189.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9923870837450609,
+            "mae_rgb_normalized": 0.0005607255923202615,
+            "left_luminance_std": 0.1961640530074629,
+            "right_luminance_std": 0.19576248062080068
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a52ab9899590b02b",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N134.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N175.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N134.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N175.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.7504223184646662,
+            "mae_rgb_normalized": 0.027382425545087824,
+            "left_luminance_std": 0.1224556999837266,
+            "right_luminance_std": 0.12147611833385889
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a55d1f681b89bf1f",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cu/Cu-N018.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N088.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cu/Cu-N018.jpg",
+            "right_path": "data/ccsn/images/St/St-N088.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9617763059926462,
+            "mae_rgb_normalized": 0.007903833326950572,
+            "left_luminance_std": 0.22477438616468656,
+            "right_luminance_std": 0.22432739248252467
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a5cd992de72e5e69",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N013.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N029.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N013.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N029.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9961909462938031,
+            "mae_rgb_normalized": 0.0009178012025122549,
+            "left_luminance_std": 0.19276230427765906,
+            "right_luminance_std": 0.1926096945946489
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a70bb1e238b1f71b",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N183.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N094.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N183.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N094.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9764163776280995,
+            "mae_rgb_normalized": 0.004253292707056781,
+            "left_luminance_std": 0.1916985140263464,
+            "right_luminance_std": 0.19097157056819353
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a82816da1458af3a",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N108.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N087.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N108.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N087.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.7863054414592506,
+            "mae_rgb_normalized": 0.021984205058976716,
+            "left_luminance_std": 0.18212167482812724,
+            "right_luminance_std": 0.1838445449409745
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_a8bc881a2a7d69ac",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N058.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N116.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N058.jpg",
+            "right_path": "data/ccsn/images/St/St-N116.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9828517476003477,
+            "mae_rgb_normalized": 0.0023868934780943625,
+            "left_luminance_std": 0.11239240075890682,
+            "right_luminance_std": 0.1121683112139433
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_aa3204e241ad8ed0",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N213.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N026.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N213.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N026.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9961249782146538,
+            "mae_rgb_normalized": 0.0003273758233762255,
+            "left_luminance_std": 0.19111969894025016,
+            "right_luminance_std": 0.19136026717872992
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_aec5ac9cbae86c11",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N171.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N109.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N090.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N171.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N109.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.8568211632840791,
+            "mae_rgb_normalized": 0.01734353857102737,
+            "left_luminance_std": 0.25587420718024023,
+            "right_luminance_std": 0.2557363602388418
+          },
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N171.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N090.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.8565022450449882,
+            "mae_rgb_normalized": 0.017332568199805966,
+            "left_luminance_std": 0.25587420718024023,
+            "right_luminance_std": 0.2554862816149985
+          },
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N109.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N090.jpg",
+            "hamming_distance": 6,
+            "ssim": 0.9823084031128011,
+            "mae_rgb_normalized": 0.0013485179227941176,
+            "left_luminance_std": 0.2557363602388418,
+            "right_luminance_std": 0.2554862816149985
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_af19e826f29a5e78",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N189.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N242.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N189.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N242.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9737032360981956,
+            "mae_rgb_normalized": 0.005230513429330066,
+            "left_luminance_std": 0.14971427396342085,
+            "right_luminance_std": 0.14977731763232954
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_af5a256daca42288",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N013.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N012.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 8,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N013.jpg",
+            "right_path": "data/ccsn/images/St/St-N012.jpg",
+            "hamming_distance": 8,
+            "ssim": 0.991918449339711,
+            "mae_rgb_normalized": 0.0008477703418607028,
+            "left_luminance_std": 0.15167067199989873,
+            "right_luminance_std": 0.15185858438994163
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_b08ddc0e2958868f",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N056.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N114.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N056.jpg",
+            "right_path": "data/ccsn/images/St/St-N114.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9871680042951588,
+            "mae_rgb_normalized": 0.0011110393050449347,
+            "left_luminance_std": 0.32136799984106623,
+            "right_luminance_std": 0.3209776619700142
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_b1d626429e91c7be",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N142.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N045.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N142.jpg",
+            "right_path": "data/ccsn/images/St/St-N045.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.987467361689073,
+            "mae_rgb_normalized": 0.002025090635212418,
+            "left_luminance_std": 0.15651921218928513,
+            "right_luminance_std": 0.1565825644896605
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_b4dd87dcb0938fd4",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N022.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N206.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N284.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N022.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N206.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9635392902701717,
+            "mae_rgb_normalized": 0.0069813447840073525,
+            "left_luminance_std": 0.2945718978130817,
+            "right_luminance_std": 0.2947071959917729
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N022.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N284.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9979440839064871,
+            "mae_rgb_normalized": 0.0002161960975796568,
+            "left_luminance_std": 0.2945718978130817,
+            "right_luminance_std": 0.29458739970837694
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N206.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N284.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.963120512301226,
+            "mae_rgb_normalized": 0.0070072149139603765,
+            "left_luminance_std": 0.2947071959917729,
+            "right_luminance_std": 0.29458739970837694
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_b6c459d89a482250",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N040.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N084.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N040.jpg",
+            "right_path": "data/ccsn/images/St/St-N084.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9974992033436698,
+            "mae_rgb_normalized": 0.0006430233226102942,
+            "left_luminance_std": 0.17790906484296123,
+            "right_luminance_std": 0.1777441000483583
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_ba7d884512ab4b88",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N006.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N047.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N006.jpg",
+            "right_path": "data/ccsn/images/St/St-N047.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9979707174584224,
+            "mae_rgb_normalized": 0.0002401513991013072,
+            "left_luminance_std": 0.22687433039881774,
+            "right_luminance_std": 0.22699953172797327
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_bb47f5f8f9373071",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N005.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N060.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N005.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N060.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9945158901098532,
+            "mae_rgb_normalized": 0.00040688109553717317,
+            "left_luminance_std": 0.20068078856776803,
+            "right_luminance_std": 0.20074071786808792
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_bf6b0117d6fadae7",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N186.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N139.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N141.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N171.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N186.jpg",
+            "right_path": "data/ccsn/images/As/As-N139.jpg",
+            "hamming_distance": 0,
+            "ssim": 1.0,
+            "mae_rgb_normalized": 0.0,
+            "left_luminance_std": 0.1601167315679714,
+            "right_luminance_std": 0.1601167315679714
+          },
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N186.jpg",
+            "right_path": "data/ccsn/images/As/As-N141.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.8577618949595772,
+            "mae_rgb_normalized": 0.01655261469822304,
+            "left_luminance_std": 0.1601167315679714,
+            "right_luminance_std": 0.15838096313107178
+          },
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N186.jpg",
+            "right_path": "data/ccsn/images/St/St-N171.jpg",
+            "hamming_distance": 6,
+            "ssim": 0.855521582065451,
+            "mae_rgb_normalized": 0.016797991983251635,
+            "left_luminance_std": 0.1601167315679714,
+            "right_luminance_std": 0.15807425572922074
+          },
+          {
+            "left_path": "data/ccsn/images/As/As-N139.jpg",
+            "right_path": "data/ccsn/images/As/As-N141.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.8577618949595772,
+            "mae_rgb_normalized": 0.01655261469822304,
+            "left_luminance_std": 0.1601167315679714,
+            "right_luminance_std": 0.15838096313107178
+          },
+          {
+            "left_path": "data/ccsn/images/As/As-N139.jpg",
+            "right_path": "data/ccsn/images/St/St-N171.jpg",
+            "hamming_distance": 6,
+            "ssim": 0.855521582065451,
+            "mae_rgb_normalized": 0.016797991983251635,
+            "left_luminance_std": 0.1601167315679714,
+            "right_luminance_std": 0.15807425572922074
+          },
+          {
+            "left_path": "data/ccsn/images/As/As-N141.jpg",
+            "right_path": "data/ccsn/images/St/St-N171.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9950606280299721,
+            "mae_rgb_normalized": 0.001022638059129902,
+            "left_luminance_std": 0.15838096313107178,
+            "right_luminance_std": 0.15807425572922074
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_bfe6362f14e5f322",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N024.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/no_nube/Ct-N128.jpg",
+          "class_id": "no_nube",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N024.jpg",
+            "right_path": "data/ccsn/images/no_nube/Ct-N128.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9950999543035457,
+            "mae_rgb_normalized": 0.0009440702550551471,
+            "left_luminance_std": 0.19276723978983085,
+            "right_luminance_std": 0.19293465680075528
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_c2e7f66807437427",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N075.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N113.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N075.jpg",
+            "right_path": "data/ccsn/images/St/St-N113.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9983387022127544,
+            "mae_rgb_normalized": 0.00017941543479370914,
+            "left_luminance_std": 0.17648648143605483,
+            "right_luminance_std": 0.17657860391107236
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_c541e1cdb0f293cc",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N145.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N017.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N145.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N017.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9941476793180698,
+            "mae_rgb_normalized": 0.0005244635289011438,
+            "left_luminance_std": 0.27414449348818476,
+            "right_luminance_std": 0.2742945289365179
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_c73a2dbbd8533d5e",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N143.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N023.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N143.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N023.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9959908042948787,
+            "mae_rgb_normalized": 0.0003031013837826798,
+            "left_luminance_std": 0.20333337801586038,
+            "right_luminance_std": 0.2032113461623894
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_c7995c7beb77b465",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cs/Cs-N038.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N256.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N038.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N256.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9954763826626749,
+            "mae_rgb_normalized": 0.0003835441240298203,
+            "left_luminance_std": 0.2304030618361593,
+            "right_luminance_std": 0.2306422906439626
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_c90a75eafa9dcde9",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N064.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N112.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N123.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N064.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N112.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9670939633986201,
+            "mae_rgb_normalized": 0.008032665377348857,
+            "left_luminance_std": 0.12661733413379783,
+            "right_luminance_std": 0.12599865522916512
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N064.jpg",
+            "right_path": "data/ccsn/images/St/St-N123.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9859399592310253,
+            "mae_rgb_normalized": 0.001796587775735294,
+            "left_luminance_std": 0.12661733413379783,
+            "right_luminance_std": 0.12799808324417972
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N112.jpg",
+            "right_path": "data/ccsn/images/St/St-N123.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9588473563875276,
+            "mae_rgb_normalized": 0.009056739557802286,
+            "left_luminance_std": 0.12599865522916512,
+            "right_luminance_std": 0.12799808324417972
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_ca32a654fdc259e2",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N111.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N079.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N153.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N111.jpg",
+            "right_path": "data/ccsn/images/Ci/Ci-N079.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.8762819748736704,
+            "mae_rgb_normalized": 0.014402062908496731,
+            "left_luminance_std": 0.14300619353568944,
+            "right_luminance_std": 0.14200096161219938
+          },
+          {
+            "left_path": "data/ccsn/images/As/As-N111.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N153.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.877066355211114,
+            "mae_rgb_normalized": 0.014285058912888072,
+            "left_luminance_std": 0.14300619353568944,
+            "right_luminance_std": 0.141999946076792
+          },
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N079.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N153.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9967067379806674,
+            "mae_rgb_normalized": 0.00036006752961601304,
+            "left_luminance_std": 0.14200096161219938,
+            "right_luminance_std": 0.141999946076792
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_cb3f973a93f65557",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N023.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N003.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N023.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N003.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.5358078132345071,
+            "mae_rgb_normalized": 0.07062874588311886,
+            "left_luminance_std": 0.1691503402834146,
+            "right_luminance_std": 0.17967746269845025
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_cbdd3353378324aa",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-05-00 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altocumulus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-27-23 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "cumulonimbus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-05-00 Photo Gallery - Cloud Appreciation Society.png",
+            "right_path": "data/sociedad/cumulonimbus/Screenshot 2026-10-18 at 22-27-23 Photo Gallery - Cloud Appreciation Society.png",
+            "hamming_distance": 0,
+            "ssim": 1.0,
+            "mae_rgb_normalized": 0.0,
+            "left_luminance_std": 0.216632830196496,
+            "right_luminance_std": 0.216632830196496
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_ced0317de0b525df",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N039.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ns/Ns-N093.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N083.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N039.jpg",
+            "right_path": "data/ccsn/images/Ns/Ns-N093.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9620640924111656,
+            "mae_rgb_normalized": 0.00748135435814951,
+            "left_luminance_std": 0.2134422100969952,
+            "right_luminance_std": 0.2124624036756647
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N039.jpg",
+            "right_path": "data/ccsn/images/St/St-N083.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9957234534906485,
+            "mae_rgb_normalized": 0.0004063425500408497,
+            "left_luminance_std": 0.2134422100969952,
+            "right_luminance_std": 0.21374261231259228
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N093.jpg",
+            "right_path": "data/ccsn/images/St/St-N083.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9619910296747113,
+            "mae_rgb_normalized": 0.007534650416156047,
+            "left_luminance_std": 0.2124624036756647,
+            "right_luminance_std": 0.21374261231259228
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d0114d09a6fd1d4e",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N143.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N046.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 8,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N143.jpg",
+            "right_path": "data/ccsn/images/St/St-N046.jpg",
+            "hamming_distance": 8,
+            "ssim": 0.9845254886554832,
+            "mae_rgb_normalized": 0.0022688123914930557,
+            "left_luminance_std": 0.10116100790273808,
+            "right_luminance_std": 0.10251166408613119
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d07d01bd4dfce30f",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N062.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N150.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N062.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N150.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.999600282102731,
+            "mae_rgb_normalized": 8.147993898080068e-05,
+            "left_luminance_std": 0.17502678392410612,
+            "right_luminance_std": 0.17502704552168896
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d08e97f5ee3cc4ae",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N122.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N167.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N122.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N167.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9967879286725635,
+            "mae_rgb_normalized": 0.0002259298087724673,
+            "left_luminance_std": 0.13664816015491135,
+            "right_luminance_std": 0.13662072160354216
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d11febe9bf7778bb",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N121.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N166.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N121.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N166.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9855905346575008,
+            "mae_rgb_normalized": 0.002803328769658905,
+            "left_luminance_std": 0.1588829906567236,
+            "right_luminance_std": 0.15903536699312246
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d208955cb7578b99",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N020.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N072.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 8,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N020.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N072.jpg",
+            "hamming_distance": 8,
+            "ssim": 0.987809199395954,
+            "mae_rgb_normalized": 0.0017660502514808005,
+            "left_luminance_std": 0.22023587058321373,
+            "right_luminance_std": 0.22099388098730563
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d3033f8a4a6bb2cc",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N137.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N131.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N137.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N131.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9825487170669337,
+            "mae_rgb_normalized": 0.003695259842218138,
+            "left_luminance_std": 0.15558050605076246,
+            "right_luminance_std": 0.1545745381461078
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d4e22606ccc5f24c",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N154.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/Cc/Cc-N046.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N154.jpg",
+            "right_path": "data/ccsn/images/Cc/Cc-N046.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9920247780988268,
+            "mae_rgb_normalized": 0.0014791251787173202,
+            "left_luminance_std": 0.12184552430176457,
+            "right_luminance_std": 0.12145913170584971
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d6a6e5d9f98cbc57",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ac/Ac-N202.jpg",
+          "class_id": "altocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/As/As-N175.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ac/Ac-N202.jpg",
+            "right_path": "data/ccsn/images/As/As-N175.jpg",
+            "hamming_distance": 0,
+            "ssim": 1.0,
+            "mae_rgb_normalized": 0.0,
+            "left_luminance_std": 0.10443411151059385,
+            "right_luminance_std": 0.10443411151059385
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_d9b30c7be46ce487",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cb/Cb-N214.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N007.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cb/Cb-N214.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N007.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9910562802204438,
+            "mae_rgb_normalized": 0.0006181106068729575,
+            "left_luminance_std": 0.18655814152398453,
+            "right_luminance_std": 0.18616072298468417
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_dbbcdebf6ecddd58",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N019.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cb/Cb-N212.jpg",
+          "class_id": "cumulonimbus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N019.jpg",
+            "right_path": "data/ccsn/images/Cb/Cb-N212.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.997092841665033,
+            "mae_rgb_normalized": 0.0001380272160947712,
+            "left_luminance_std": 0.18708721261400035,
+            "right_luminance_std": 0.18723782053530486
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_dd87c22b8c1e2334",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ci/Ci-N033.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N157.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N033.jpg",
+            "right_path": "data/ccsn/images/St/St-N157.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9992869966653269,
+            "mae_rgb_normalized": 0.00015839221430759802,
+            "left_luminance_std": 0.13989517206488894,
+            "right_luminance_std": 0.13989037516955585
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_de879b39ef05ce44",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N148.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N182.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 6,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N148.jpg",
+            "right_path": "data/ccsn/images/St/St-N182.jpg",
+            "hamming_distance": 6,
+            "ssim": 0.9889273107237623,
+            "mae_rgb_normalized": 0.0017006668390012252,
+            "left_luminance_std": 0.18622079939819997,
+            "right_luminance_std": 0.1853514229121902
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_e4296989052835fd",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N065.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N126.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 6,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N065.jpg",
+            "right_path": "data/ccsn/images/St/St-N126.jpg",
+            "hamming_distance": 6,
+            "ssim": 0.9845731267783804,
+            "mae_rgb_normalized": 0.0012382357728247548,
+            "left_luminance_std": 0.2584664679599772,
+            "right_luminance_std": 0.25848849037343496
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_e4e7327b81bcaff0",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N012.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N231.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 4,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N012.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N231.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9906448771989936,
+            "mae_rgb_normalized": 0.0008215810738357843,
+            "left_luminance_std": 0.2306092265438848,
+            "right_luminance_std": 0.2299809888226846
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_e56bc98d9e66865c",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Sc/Sc-N007.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N004.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N007.jpg",
+            "right_path": "data/ccsn/images/St/St-N004.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9976728131479105,
+            "mae_rgb_normalized": 0.0003495758655024511,
+            "left_luminance_std": 0.25949696513233644,
+            "right_luminance_std": 0.2595162062651882
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_e68dcda2529c190c",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cu/Cu-N021.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N277.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cu/Cu-N021.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N277.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9660038866010172,
+            "mae_rgb_normalized": 0.006394310246885211,
+            "left_luminance_std": 0.15161596626804869,
+            "right_luminance_std": 0.15137995666292536
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_e90cbbde5454fcb1",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N179.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N244.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N179.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N244.jpg",
+            "hamming_distance": 0,
+            "ssim": 1.0,
+            "mae_rgb_normalized": 0.0,
+            "left_luminance_std": 0.08851464778388761,
+            "right_luminance_std": 0.08851464778388761
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_ebf5f9b2aa5b3df1",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N060.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "test"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N119.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N060.jpg",
+            "right_path": "data/ccsn/images/St/St-N119.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9882764253739946,
+            "mae_rgb_normalized": 0.0013753055747038401,
+            "left_luminance_std": 0.12029185346013617,
+            "right_luminance_std": 0.12012765861443912
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_f0124bb78b773b8a",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-28 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altocumulus",
+          "source": "sociedad",
+          "split": "calibration"
+        },
+        {
+          "path": "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-05-30 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altostratus",
+          "source": "sociedad",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-28 Photo Gallery - Cloud Appreciation Society.png",
+            "right_path": "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-05-30 Photo Gallery - Cloud Appreciation Society.png",
+            "hamming_distance": 0,
+            "ssim": 1.0,
+            "mae_rgb_normalized": 0.0,
+            "left_luminance_std": 0.2770603767525557,
+            "right_luminance_std": 0.2770603767525557
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_f1d9c5357278a018",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N112.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Ci/Ci-N083.jpg",
+          "class_id": "cirrus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N155.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N112.jpg",
+            "right_path": "data/ccsn/images/Ci/Ci-N083.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.7979526102692304,
+            "mae_rgb_normalized": 0.025313792509191177,
+            "left_luminance_std": 0.16587515513246234,
+            "right_luminance_std": 0.16513204149571267
+          },
+          {
+            "left_path": "data/ccsn/images/As/As-N112.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N155.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.798712959287451,
+            "mae_rgb_normalized": 0.025121651443780636,
+            "left_luminance_std": 0.16587515513246234,
+            "right_luminance_std": 0.16528130530253426
+          },
+          {
+            "left_path": "data/ccsn/images/Ci/Ci-N083.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N155.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9945842412320447,
+            "mae_rgb_normalized": 0.0005559584673713235,
+            "left_luminance_std": 0.16513204149571267,
+            "right_luminance_std": 0.16528130530253426
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_f58466972ac5a207",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N004.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Sc/Sc-N044.jpg",
+          "class_id": "stratocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N021.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N004.jpg",
+            "right_path": "data/ccsn/images/Sc/Sc-N044.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9910725464593394,
+            "mae_rgb_normalized": 0.0012467727162479576,
+            "left_luminance_std": 0.2692523645498796,
+            "right_luminance_std": 0.2681983201663423
+          },
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N004.jpg",
+            "right_path": "data/ccsn/images/St/St-N021.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9909912262861117,
+            "mae_rgb_normalized": 0.0011311250574448529,
+            "left_luminance_std": 0.2692523645498796,
+            "right_luminance_std": 0.2673684220495429
+          },
+          {
+            "left_path": "data/ccsn/images/Sc/Sc-N044.jpg",
+            "right_path": "data/ccsn/images/St/St-N021.jpg",
+            "hamming_distance": 4,
+            "ssim": 0.9882718285004796,
+            "mae_rgb_normalized": 0.0018133425245098038,
+            "left_luminance_std": 0.2681983201663423,
+            "right_luminance_std": 0.2673684220495429
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_f5d555a6e237c908",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Cc/Cc-N180.jpg",
+          "class_id": "cirrocumulus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N241.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Cc/Cc-N180.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N241.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9763725220318332,
+            "mae_rgb_normalized": 0.005518655215992647,
+            "left_luminance_std": 0.17351059582616726,
+            "right_luminance_std": 0.17347203739741052
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_f5e71f7d888d53ee",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N152.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cu/Cu-N008.jpg",
+          "class_id": "cumulus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 2,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N152.jpg",
+            "right_path": "data/ccsn/images/Cu/Cu-N008.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9945989716453035,
+            "mae_rgb_normalized": 0.0007803923164317809,
+            "left_luminance_std": 0.10582766028982556,
+            "right_luminance_std": 0.1061525875263625
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_fa91da4f67dae921",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/Ns/Ns-N175.jpg",
+          "class_id": "nimbostratus",
+          "source": "ccsn",
+          "split": "calibration"
+        },
+        {
+          "path": "data/ccsn/images/St/St-N185.jpg",
+          "class_id": "stratus",
+          "source": "ccsn",
+          "split": "calibration"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/Ns/Ns-N175.jpg",
+            "right_path": "data/ccsn/images/St/St-N185.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.999622766117505,
+            "mae_rgb_normalized": 0.00011177810968137282,
+            "left_luminance_std": 0.06654386910834985,
+            "right_luminance_std": 0.06649182369499967
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_fb3cddd7aa4d4cb5",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-16 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratocumulus",
+          "source": "sociedad",
+          "split": "test"
+        },
+        {
+          "path": "data/sociedad/stratus/Screenshot 2026-10-18 at 22-00-58 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "stratus",
+          "source": "sociedad",
+          "split": "test"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/sociedad/stratocumulus/Screenshot 2026-10-18 at 22-03-16 Photo Gallery - Cloud Appreciation Society.png",
+            "right_path": "data/sociedad/stratus/Screenshot 2026-10-18 at 22-00-58 Photo Gallery - Cloud Appreciation Society.png",
+            "hamming_distance": 0,
+            "ssim": 0.9999638589867841,
+            "mae_rgb_normalized": 1.894882301879085e-06,
+            "left_luminance_std": 0.2676598800409394,
+            "right_luminance_std": 0.26765690415237975
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_fc6b8a67c2fb1cc9",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/ccsn/images/As/As-N043.jpg",
+          "class_id": "altostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N087.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        },
+        {
+          "path": "data/ccsn/images/Cs/Cs-N114.jpg",
+          "class_id": "cirrostratus",
+          "source": "ccsn",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/ccsn/images/As/As-N043.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N087.jpg",
+            "hamming_distance": 0,
+            "ssim": 0.9756526809943811,
+            "mae_rgb_normalized": 0.005778832529105392,
+            "left_luminance_std": 0.22302548134525496,
+            "right_luminance_std": 0.22277260317148923
+          },
+          {
+            "left_path": "data/ccsn/images/As/As-N043.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N114.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9947791747842678,
+            "mae_rgb_normalized": 0.00042766496246936274,
+            "left_luminance_std": 0.22302548134525496,
+            "right_luminance_std": 0.22288130429079708
+          },
+          {
+            "left_path": "data/ccsn/images/Cs/Cs-N087.jpg",
+            "right_path": "data/ccsn/images/Cs/Cs-N114.jpg",
+            "hamming_distance": 2,
+            "ssim": 0.9736036497048625,
+            "mae_rgb_normalized": 0.006020280426623774,
+            "left_luminance_std": 0.22277260317148923,
+            "right_luminance_std": 0.22288130429079708
+          }
+        ]
+      }
+    },
+    {
+      "group_id": "group_fffc6c4874436ebe",
+      "reason": "misma foto, etiquetas contradictorias",
+      "images": [
+        {
+          "path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-30 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altocumulus",
+          "source": "sociedad",
+          "split": "train"
+        },
+        {
+          "path": "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-05-32 Photo Gallery - Cloud Appreciation Society.png",
+          "class_id": "altostratus",
+          "source": "sociedad",
+          "split": "train"
+        }
+      ],
+      "evidence": {
+        "minimum_hamming_distance": 0,
+        "pairs": [
+          {
+            "left_path": "data/sociedad/altocumulus/Screenshot 2026-10-18 at 22-04-30 Photo Gallery - Cloud Appreciation Society.png",
+            "right_path": "data/sociedad/altostratus/Screenshot 2026-10-18 at 22-05-32 Photo Gallery - Cloud Appreciation Society.png",
+            "hamming_distance": 0,
+            "ssim": 0.9999856839289257,
+            "mae_rgb_normalized": 1.4361213235294117e-06,
+            "left_luminance_std": 0.2703262485204761,
+            "right_luminance_std": 0.2703248092866359
+          }
+        ]
+      }
+    }
+  ]
+}

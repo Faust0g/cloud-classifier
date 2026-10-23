@@ -12,6 +12,7 @@ from collections import Counter
 from dataclasses import asdict, dataclass
 from datetime import UTC, datetime
 from pathlib import Path
+from pathlib import PurePosixPath
 from typing import Any, Sequence
 
 import numpy as np
@@ -27,7 +28,8 @@ from cloud_classifier.preprocessing import load_model_contract, preprocess_image
 
 MODEL_NAME = "mobilenetv3_large_100"
 PARTITION_MANIFEST = Path("manifests/partitions-v1.json")
-VALIDATION_MANIFEST = Path("manifests/validation-v1.json")
+VALIDATION_MANIFEST = Path("manifests/validation-v2.json")
+EXCLUSION_MANIFEST = Path("manifests/exclusions-v1.json")
 VALIDATION_FRACTION = 0.10
 VALIDATION_ALGORITHM = "grouped-greedy-class-and-size-stratification-v2"
 GROUP_SIZE_STRATIFICATION_WEIGHT = 5.0
@@ -130,6 +132,155 @@ def read_training_rows(partition_path: Path) -> tuple[list[dict[str, Any]], str]
     return training_rows, hashlib.sha256(raw_manifest).hexdigest()
 
 
+def read_exclusion_manifest(
+    exclusion_path: Path, partition_sha256: str, class_ids: Sequence[str]
+) -> tuple[list[dict[str, Any]], str]:
+    try:
+        raw_manifest = exclusion_path.read_bytes()
+        manifest = json.loads(raw_manifest)
+    except (OSError, json.JSONDecodeError) as error:
+        raise TrainingDataError(
+            f"No se pudo leer el manifiesto de exclusiones: {exclusion_path}"
+        ) from error
+    if not isinstance(manifest, dict) or manifest.get("exclusions_version") != 1:
+        raise TrainingDataError("La versión del manifiesto de exclusiones no es válida.")
+    if manifest.get("partition_sha256") != partition_sha256:
+        raise TrainingDataError(
+            "El manifiesto de exclusiones no corresponde a las particiones congeladas."
+        )
+    groups = manifest.get("groups")
+    if not isinstance(groups, list):
+        raise TrainingDataError("El manifiesto de exclusiones debe contener grupos.")
+
+    allowed_classes = set(class_ids)
+    exclusion_rows: list[dict[str, Any]] = []
+    seen_groups: set[str] = set()
+    seen_paths: set[str] = set()
+    for group in groups:
+        if (
+            not isinstance(group, dict)
+            or not isinstance(group.get("group_id"), str)
+            or not group["group_id"]
+            or group.get("reason") != "misma foto, etiquetas contradictorias"
+            or group["group_id"] in seen_groups
+        ):
+            raise TrainingDataError("El manifiesto contiene un grupo de exclusión inválido.")
+        seen_groups.add(group["group_id"])
+        images = group.get("images")
+        if not isinstance(images, list) or len(images) < 2:
+            raise TrainingDataError(
+                f"El grupo de exclusión {group['group_id']} no contiene suficientes imágenes."
+            )
+        group_classes: set[str] = set()
+        for image in images:
+            if not isinstance(image, dict):
+                raise TrainingDataError("Una imagen excluida tiene formato inválido.")
+            path = image.get("path")
+            class_id = image.get("class_id")
+            source = image.get("source")
+            split = image.get("split")
+            posix_path = PurePosixPath(path) if isinstance(path, str) else None
+            if (
+                posix_path is None
+                or not path
+                or posix_path.is_absolute()
+                or ".." in posix_path.parts
+                or "\\" in path
+                or ":" in path
+                or not isinstance(class_id, str)
+                or class_id not in allowed_classes
+                or not isinstance(source, str)
+                or not source
+                or not isinstance(split, str)
+                or split not in {"train", "calibration", "test"}
+                or path in seen_paths
+            ):
+                raise TrainingDataError("Una imagen excluida tiene campos inválidos.")
+            seen_paths.add(path)
+            group_classes.add(class_id)
+            exclusion_rows.append(
+                {
+                    "group_id": group["group_id"],
+                    "path": path,
+                    "class_id": class_id,
+                    "source": source,
+                    "split": split,
+                }
+            )
+        if len(group_classes) < 2:
+            raise TrainingDataError(
+                f"El grupo de exclusión {group['group_id']} no tiene etiquetas contradictorias."
+            )
+    if not groups:
+        raise TrainingDataError("El manifiesto de exclusiones no contiene grupos.")
+    return exclusion_rows, hashlib.sha256(raw_manifest).hexdigest()
+
+
+def filter_excluded_training_rows(
+    rows: Sequence[dict[str, Any]],
+    exclusion_rows: Sequence[dict[str, Any]],
+    class_ids: Sequence[str],
+) -> list[dict[str, Any]]:
+    rows_by_path = {row.get("path"): row for row in rows}
+    excluded_training = {
+        exclusion["path"]: exclusion
+        for exclusion in exclusion_rows
+        if exclusion["split"] == "train"
+    }
+    for path, exclusion in excluded_training.items():
+        row = rows_by_path.get(path)
+        if (
+            row is None
+            or row.get("split") != "train"
+            or row.get("class_id") != exclusion["class_id"]
+            or row.get("source") != exclusion["source"]
+        ):
+            raise TrainingDataError(
+                f"La exclusión no coincide con la fila de entrenamiento: {path}"
+            )
+
+    records = _records_from_training_rows(rows, class_ids)
+    records_by_id = {record.image_id: record for record in records}
+    group_paths_by_id: dict[str, set[str]] = {}
+    for group in build_similarity_groups(records):
+        group_paths = {
+            records_by_id[image_id].path for image_id in group.image_ids
+        }
+        group_paths_by_id[group.group_id] = group_paths
+        excluded_paths = group_paths.intersection(excluded_training)
+        if excluded_paths and excluded_paths != group_paths:
+            raise TrainingDataError(
+                f"La exclusión divide el grupo de parecido {group.group_id}."
+            )
+    train_exclusion_groups: dict[str, set[str]] = {}
+    for path, exclusion in excluded_training.items():
+        train_exclusion_groups.setdefault(exclusion["group_id"], set()).add(path)
+    for group_id, paths in train_exclusion_groups.items():
+        if group_paths_by_id.get(group_id) != paths:
+            raise TrainingDataError(
+                f"Las rutas no coinciden con el grupo de exclusión {group_id}."
+            )
+    return [row for row in rows if row["path"] not in excluded_training]
+
+
+def prepare_training_validation_rows(
+    rows: Sequence[dict[str, Any]],
+    validation_paths: set[str],
+    exclusion_rows: Sequence[dict[str, Any]],
+    class_ids: Sequence[str],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    included_rows = filter_excluded_training_rows(rows, exclusion_rows, class_ids)
+    training_rows = [
+        row for row in included_rows if row["path"] not in validation_paths
+    ]
+    validation_rows = [
+        row for row in included_rows if row["path"] in validation_paths
+    ]
+    if not training_rows or not validation_rows:
+        raise TrainingDataError("La división dejó vacío entrenamiento o validación.")
+    return training_rows, validation_rows
+
+
 def _records_from_training_rows(
     rows: Sequence[dict[str, Any]], class_ids: Sequence[str]
 ) -> list[ImageRecord]:
@@ -223,6 +374,28 @@ def _validation_group_summary(
             for split, counts in class_group_counts.items()
         },
     }
+
+
+def _effective_validation_group_summary(
+    training_rows: Sequence[dict[str, Any]],
+    validation_rows: Sequence[dict[str, Any]],
+    class_ids: Sequence[str],
+) -> dict[str, Any]:
+    records = _records_from_training_rows(training_rows, class_ids)
+    records_by_id = {record.image_id: record for record in records}
+    validation_image_ids = {
+        hashlib.sha256(row["path"].encode("utf-8")).hexdigest()[:24]
+        for row in validation_rows
+    }
+    groups = build_similarity_groups(records)
+    validation_group_ids = {
+        group.group_id
+        for group in groups
+        if validation_image_ids.intersection(group.image_ids)
+    }
+    return _validation_group_summary(
+        groups, records_by_id, validation_group_ids, class_ids
+    )
 
 
 def _validation_objective(
@@ -411,18 +584,92 @@ def load_or_create_validation_assignment(
     return assignment
 
 
+def create_validation_v2_assignment(
+    rows: Sequence[dict[str, Any]],
+    partition_sha256: str,
+    exclusion_sha256: str,
+    class_ids: Sequence[str],
+    seed: int,
+) -> dict[str, Any]:
+    if seed != 42:
+        raise TrainingDataError("validation-v2 requiere la semilla fija 42.")
+    if not exclusion_sha256:
+        raise TrainingDataError("validation-v2 requiere el hash de exclusiones.")
+    if any(row.get("split") != "train" for row in rows):
+        raise TrainingDataError("validation-v2 solo admite filas del split train.")
+    assignment = create_validation_assignment(
+        rows, partition_sha256, class_ids, seed
+    )
+    assignment["validation_version"] = 2
+    assignment["exclusion_sha256"] = exclusion_sha256
+    return assignment
+
+
+def load_validation_v2_assignment(
+    validation_path: Path,
+    rows: Sequence[dict[str, Any]],
+    partition_sha256: str,
+    exclusion_sha256: str,
+    class_ids: Sequence[str],
+    seed: int,
+) -> dict[str, Any]:
+    if seed != 42:
+        raise TrainingDataError("validation-v2 requiere la semilla fija 42.")
+    try:
+        assignment = json.loads(validation_path.read_text(encoding="utf-8"))
+    except FileNotFoundError as error:
+        raise TrainingDataError(
+            f"Falta {validation_path}; validation-v2 debe aprobarse y congelarse "
+            "antes de entrenar."
+        ) from error
+    except (OSError, json.JSONDecodeError) as error:
+        raise TrainingDataError(
+            f"No se pudo leer validation-v2: {validation_path}"
+        ) from error
+    if not isinstance(assignment, dict):
+        raise TrainingDataError("validation-v2 debe ser un objeto JSON.")
+    if assignment.get("validation_version") == 1:
+        raise TrainingDataError(
+            "Se requiere validation-v2; validation-v1 es solo historial "
+            "y no se puede usar para entrenar."
+        )
+    _validate_validation_assignment(
+        assignment,
+        rows,
+        partition_sha256,
+        class_ids,
+        seed,
+        expected_version=2,
+        exclusion_sha256=exclusion_sha256,
+    )
+    return assignment
+
+
 def _validate_validation_assignment(
     assignment: Any,
     rows: Sequence[dict[str, Any]],
     partition_sha256: str,
     class_ids: Sequence[str],
     seed: int,
+    *,
+    expected_version: int = 1,
+    exclusion_sha256: str | None = None,
 ) -> None:
-    if not isinstance(assignment, dict) or assignment.get("validation_version") != 1:
+    if (
+        not isinstance(assignment, dict)
+        or assignment.get("validation_version") != expected_version
+    ):
         raise TrainingDataError("La versión de la asignación de validación no es válida.")
     if assignment.get("partition_sha256") != partition_sha256:
         raise TrainingDataError(
             "La asignación de validación no corresponde al manifiesto congelado actual."
+        )
+    if (
+        expected_version == 2
+        and assignment.get("exclusion_sha256") != exclusion_sha256
+    ):
+        raise TrainingDataError(
+            "validation-v2 no corresponde al manifiesto de exclusiones actual."
         )
     if assignment.get("seed") != seed:
         raise TrainingDataError(
@@ -545,16 +792,7 @@ def _make_dataset(
 
         def __getitem__(self, index: int):
             row = self.rows[index]
-            image_path = _resolve_image_path(root, row["path"])
-            with Image.open(image_path) as image:
-                if augment:
-                    augmented = _augment_training_image(image, random)
-                    try:
-                        tensor_array = preprocess_image(augmented)[0]
-                    finally:
-                        augmented.close()
-                else:
-                    tensor_array = preprocess_image(image)[0]
+            tensor_array = _load_preprocessed_image(row, root, augment)
             return (
                 torch.from_numpy(tensor_array.copy()),
                 self.class_to_index[row["class_id"]],
@@ -562,6 +800,20 @@ def _make_dataset(
             )
 
     return TrainingImageDataset()
+
+
+def _load_preprocessed_image(
+    row: dict[str, Any], root: Path, augment: bool
+) -> np.ndarray:
+    image_path = _resolve_image_path(root, row["path"])
+    with Image.open(image_path) as image:
+        if augment:
+            augmented = _augment_training_image(image, random)
+            try:
+                return preprocess_image(augmented)[0]
+            finally:
+                augmented.close()
+        return preprocess_image(image)[0]
 
 
 def _seed_everything(seed: int):
@@ -724,20 +976,39 @@ def train(
     validation_manifest: Path,
     run_root: Path,
     config: TrainingConfig,
+    exclusion_manifest: Path = EXCLUSION_MANIFEST,
     device_name: str | None = None,
 ) -> Path:
     config.validate()
     contract = load_model_contract()
     class_ids = class_order_from_contract(contract)
     rows, partition_sha256 = read_training_rows(partition_manifest)
-    assignment = load_or_create_validation_assignment(
-        validation_manifest, rows, partition_sha256, class_ids, config.seed
+    exclusion_rows, exclusion_sha256 = read_exclusion_manifest(
+        exclusion_manifest, partition_sha256, class_ids
+    )
+    included_rows = filter_excluded_training_rows(
+        rows, exclusion_rows, class_ids
+    )
+    assignment = load_validation_v2_assignment(
+        validation_manifest,
+        included_rows,
+        partition_sha256,
+        exclusion_sha256,
+        class_ids,
+        config.seed,
     )
     validation_paths = set(assignment["validation_paths"])
-    training_rows = [row for row in rows if row["path"] not in validation_paths]
-    validation_rows = [row for row in rows if row["path"] in validation_paths]
+    training_rows = [
+        row for row in included_rows if row["path"] not in validation_paths
+    ]
+    validation_rows = [
+        row for row in included_rows if row["path"] in validation_paths
+    ]
     if not training_rows or not validation_rows:
         raise TrainingDataError("La división dejó vacío entrenamiento o validación.")
+    effective_validation_summary = _effective_validation_group_summary(
+        training_rows + validation_rows, validation_rows, class_ids
+    )
 
     torch = _seed_everything(config.seed)
     import timm
@@ -797,14 +1068,22 @@ def train(
             "path": partition_manifest.as_posix(),
             "sha256": partition_sha256,
         },
+        "exclusion": {
+            "path": exclusion_manifest.as_posix(),
+            "sha256": exclusion_sha256,
+            "groups": len({row["group_id"] for row in exclusion_rows}),
+            "images": len(exclusion_rows),
+        },
         "validation": {
             "path": validation_manifest.as_posix(),
             "sha256": hashlib.sha256(validation_manifest.read_bytes()).hexdigest(),
             "version": assignment["validation_version"],
             "algorithm": assignment["algorithm"],
             "fraction_target": assignment["validation_fraction_target"],
-            "group_size_counts": assignment["group_size_counts"],
-            "class_group_counts": assignment["class_group_counts"],
+            "group_size_counts": effective_validation_summary["group_size_counts"],
+            "class_group_counts": effective_validation_summary["class_group_counts"],
+            "assignment_group_size_counts": assignment["group_size_counts"],
+            "assignment_class_group_counts": assignment["class_group_counts"],
         },
         "environment": {
             "python": sys.version,
@@ -903,6 +1182,7 @@ def _parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--partition-manifest", type=Path, default=PARTITION_MANIFEST)
     parser.add_argument("--validation-manifest", type=Path, default=VALIDATION_MANIFEST)
+    parser.add_argument("--exclusion-manifest", type=Path, default=EXCLUSION_MANIFEST)
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument("--run-root", type=Path, default=Path("runs"))
     parser.add_argument("--learning-rate", type=float, default=3e-4)
@@ -931,6 +1211,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         validation_manifest=args.root / args.validation_manifest,
         run_root=args.root / args.run_root,
         config=config,
+        exclusion_manifest=args.root / args.exclusion_manifest,
         device_name=args.device,
     )
     print(f"Corrida guardada en {run_directory}")
