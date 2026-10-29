@@ -54,16 +54,26 @@
   },
   "decision": {
     "no_nube": "top_class_is_no_nube",
-    "cloud": "accept_when_top_cloud_confidence_is_at_least_threshold"
+    "firme": "top_cloud_confidence_is_at_least_t_firme",
+    "par": "not_firme_and_top_two_probability_is_at_least_s_par",
+    "otherwise": "repetir_foto",
+    "porcentaje_par": "only_when_porcentaje_par_habilitado"
+  },
+  "calibration": {
+    "manifest": "manifests/calibration-v1.json",
+    "temperature_field": "T",
+    "firm_threshold_field": "t_firme",
+    "pair_threshold_field": "s_par",
+    "pair_percentage_enabled_field": "porcentaje_par_habilitado"
   },
   "confidence_threshold": {
-    "status": "pending_calibration",
+    "status": "stored_in_calibration_manifest",
     "value": null,
     "provenance": {
       "partition": "calibration",
-      "target_precision": null,
+      "target_precision": 0.85,
       "model_sha256": null,
-      "calibration_results": null
+      "calibration_results": "manifests/calibration-v1.json"
     }
   }
 }

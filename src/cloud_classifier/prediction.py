@@ -1,7 +1,71 @@
 from dataclasses import dataclass
-from typing import Literal
+import math
+from typing import Literal, Sequence
+
+import numpy as np
 
 PredictionStatus = Literal["accepted", "no_cloud", "low_confidence"]
+LogitDecision = Literal["firme", "par", "repetir", "no_nube"]
+
+
+@dataclass(frozen=True)
+class LogitClassification:
+    decision: LogitDecision
+    classes: tuple[str, ...]
+    probabilities: tuple[float, ...]
+    confidence: float
+    top2_probability: float
+
+
+def classify_logits(
+    logits: Sequence[float] | np.ndarray,
+    temperature: float,
+    firm_threshold: float | None,
+    pair_threshold: float | None,
+    class_ids: Sequence[str],
+) -> LogitClassification:
+    values = np.asarray(logits, dtype=np.float64)
+    if values.ndim != 1 or len(values) != len(class_ids) or len(values) < 2:
+        raise ValueError("Los logits deben tener un valor por clase y al menos dos clases.")
+    if not np.all(np.isfinite(values)):
+        raise ValueError("Los logits deben ser finitos.")
+    if not math.isfinite(temperature) or temperature <= 0:
+        raise ValueError("La temperatura debe ser positiva y finita.")
+    if len(class_ids) != len(set(class_ids)) or any(not item for item in class_ids):
+        raise ValueError("Los IDs de clase deben ser únicos y no vacíos.")
+    for name, threshold in (
+        ("firme", firm_threshold),
+        ("par", pair_threshold),
+    ):
+        if threshold is not None and (
+            not math.isfinite(threshold) or not 0 <= threshold <= 1
+        ):
+            raise ValueError(f"El umbral {name} debe estar entre 0 y 1.")
+
+    scaled = values / temperature
+    probabilities_array = np.exp(scaled - np.max(scaled))
+    probabilities_array /= probabilities_array.sum()
+    order = np.argsort(-probabilities_array, kind="stable")[:2]
+    classes = tuple(class_ids[int(index)] for index in order)
+    confidence = float(probabilities_array[order[0]])
+    top2_probability = float(probabilities_array[order].sum())
+
+    if classes[0] == "no_nube":
+        decision: LogitDecision = "no_nube"
+    elif firm_threshold is not None and confidence >= firm_threshold:
+        decision = "firme"
+    elif pair_threshold is not None and top2_probability >= pair_threshold:
+        decision = "par"
+    else:
+        decision = "repetir"
+
+    return LogitClassification(
+        decision=decision,
+        classes=classes,
+        probabilities=tuple(float(probabilities_array[index]) for index in order),
+        confidence=confidence,
+        top2_probability=top2_probability,
+    )
 
 
 @dataclass(frozen=True)

@@ -74,13 +74,17 @@ class ModelContractTests(unittest.TestCase):
             [entry["codigo"] for entry in yaml_classes],
         )
 
-    def test_contract_leaves_threshold_pending_with_calibration_provenance(self) -> None:
+    def test_contract_reads_threshold_from_calibration_artifact(self) -> None:
         threshold = load_model_contract()["confidence_threshold"]
 
-        self.assertEqual(threshold["status"], "pending_calibration")
+        self.assertEqual(threshold["status"], "stored_in_calibration_manifest")
         self.assertIsNone(threshold["value"])
         self.assertEqual(threshold["provenance"]["partition"], "calibration")
-        self.assertIsNone(threshold["provenance"]["target_precision"])
+        self.assertEqual(threshold["provenance"]["target_precision"], 0.85)
+        self.assertEqual(
+            threshold["provenance"]["calibration_results"],
+            "manifests/calibration-v1.json",
+        )
 
     def test_contract_preprocessing_matches_required_parameters(self) -> None:
         model_input = load_model_contract()["input"]
