@@ -47,6 +47,7 @@ class TrainingConfig:
     patience: int = 4
     seed: int = 42
     minimum_accuracy_target: float | None = None
+    class_weights: bool = False
 
     def validate(self) -> None:
         if not math.isfinite(self.learning_rate) or self.learning_rate <= 0:
@@ -108,6 +109,19 @@ def class_order_from_contract(contract: dict[str, Any] | None = None) -> tuple[s
             "El contrato debe definir once IDs de clase únicos y no vacíos."
         )
     return class_ids
+
+
+def class_weights_for_rows(
+    rows: Sequence[dict[str, Any]], class_ids: Sequence[str]
+) -> tuple[float, ...]:
+    frequencies = Counter(row["class_id"] for row in rows)
+    if not rows or any(frequencies[class_id] == 0 for class_id in class_ids):
+        raise TrainingDataError(
+            "Los pesos por clase requieren filas de entrenamiento para cada clase."
+        )
+    weights = [1 / math.sqrt(frequencies[class_id]) for class_id in class_ids]
+    mean_weight = sum(weights) / len(weights)
+    return tuple(weight / mean_weight for weight in weights)
 
 
 def read_training_rows(partition_path: Path) -> tuple[list[dict[str, Any]], str]:
@@ -1039,7 +1053,18 @@ def train(
         shuffle=False,
         num_workers=0,
     )
-    criterion = torch.nn.CrossEntropyLoss()
+    class_weights = (
+        class_weights_for_rows(training_rows, class_ids)
+        if config.class_weights
+        else None
+    )
+    criterion = torch.nn.CrossEntropyLoss(
+        weight=(
+            torch.tensor(class_weights, dtype=torch.float32, device=device)
+            if class_weights is not None
+            else None
+        )
+    )
     optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
     timestamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
     run_directory = run_root / f"{timestamp}-seed-{config.seed}"
@@ -1064,6 +1089,14 @@ def train(
             "vertical_flip": False,
         },
         "config": asdict(config),
+        "class_weights": {
+            "enabled": class_weights is not None,
+            "values": (
+                dict(zip(class_ids, class_weights, strict=True))
+                if class_weights is not None
+                else None
+            ),
+        },
         "partition": {
             "path": partition_manifest.as_posix(),
             "sha256": partition_sha256,
@@ -1191,6 +1224,11 @@ def _parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--patience", type=int, default=4)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--minimum-accuracy-target", type=float)
+    parser.add_argument(
+        "--class-weights",
+        action="store_true",
+        help="Pondera la pérdida por frecuencia inversa a la raíz cuadrada.",
+    )
     parser.add_argument("--device")
     return parser.parse_args(argv)
 
@@ -1204,6 +1242,7 @@ def main(argv: Sequence[str] | None = None) -> None:
         patience=args.patience,
         seed=args.seed,
         minimum_accuracy_target=args.minimum_accuracy_target,
+        class_weights=args.class_weights,
     )
     run_directory = train(
         root=args.root,

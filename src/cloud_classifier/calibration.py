@@ -183,10 +183,16 @@ def _softmax_rows(logits: np.ndarray, temperature: float) -> np.ndarray:
     return values / np.sum(values, axis=1, keepdims=True)
 
 
-def _smallest_threshold(scores: np.ndarray, correct: np.ndarray) -> float | None:
+def _smallest_threshold(
+    scores: np.ndarray,
+    correct: np.ndarray,
+    target_precision: float = TARGET_PRECISION,
+) -> float | None:
+    if not math.isfinite(target_precision) or not 0 <= target_precision <= 1:
+        raise ValueError("El objetivo de precisión debe estar entre 0 y 1.")
     for threshold in np.unique(scores):
         eligible = scores >= threshold
-        if int(np.sum(correct[eligible])) / int(np.sum(eligible)) >= TARGET_PRECISION:
+        if int(np.sum(correct[eligible])) / int(np.sum(eligible)) >= target_precision:
             return float(threshold)
     return None
 
@@ -285,6 +291,7 @@ def calibrate_logits(
     logits: np.ndarray,
     labels: np.ndarray,
     class_ids: Sequence[str],
+    target_precision: float = TARGET_PRECISION,
 ) -> dict[str, Any]:
     values = np.asarray(logits, dtype=np.float64)
     actual = np.asarray(labels, dtype=np.int64)
@@ -299,6 +306,8 @@ def calibrate_logits(
         or not np.all(np.isfinite(values))
     ):
         raise ValueError("Logits o etiquetas de calibración inválidos.")
+    if not math.isfinite(target_precision) or not 0 <= target_precision <= 1:
+        raise ValueError("El objetivo de precisión debe estar entre 0 y 1.")
 
     temperature = fit_temperature(values, actual)
     probabilities = _softmax_rows(values, temperature)
@@ -313,7 +322,9 @@ def calibrate_logits(
     no_cloud_index = class_ids.index("no_nube")
     firm_candidates = order[:, 0] != no_cloud_index
     firm_threshold = _smallest_threshold(
-        top1_confidence[firm_candidates], top1_correct[firm_candidates]
+        top1_confidence[firm_candidates],
+        top1_correct[firm_candidates],
+        target_precision,
     ) if np.any(firm_candidates) else None
     is_firm = (
         firm_candidates
@@ -323,7 +334,9 @@ def calibrate_logits(
     )
     pair_eligible = ~is_firm & (order[:, 0] != no_cloud_index)
     pair_threshold = _smallest_threshold(
-        top2_probability[pair_eligible], top2_correct[pair_eligible]
+        top2_probability[pair_eligible],
+        top2_correct[pair_eligible],
+        target_precision,
     ) if np.any(pair_eligible) else None
 
     pair_bins, pair_enabled, pair_inconclusive = _pair_bins(
@@ -350,6 +363,7 @@ def calibrate_logits(
     )
     return {
         "temperature": temperature,
+        "target_precision": target_precision,
         "firm_threshold": firm_threshold,
         "pair_threshold": pair_threshold,
         "percentage_pair_enabled": pair_enabled,
@@ -470,7 +484,7 @@ def calibration_artifact(
         "t_firme": results["firm_threshold"],
         "s_par": results["pair_threshold"],
         "porcentaje_par_habilitado": results["percentage_pair_enabled"],
-        "objetivo_precision": TARGET_PRECISION,
+        "objetivo_precision": results["target_precision"],
         "tolerancia_suma_top2": PAIR_TOLERANCE,
         "minimo_fotos_por_cajon": MIN_PAIR_BIN_COUNT,
         "partition_sha256": partition_hash,
@@ -578,6 +592,7 @@ def calibrate_dataset(
     device_name: str | None,
     batch_size: int,
     seed: int,
+    target_precision: float = TARGET_PRECISION,
 ) -> tuple[dict[str, Any], str, str, str, int]:
     contract = load_model_contract()
     class_ids = class_order_from_contract(contract)
@@ -590,7 +605,7 @@ def calibrate_dataset(
     model, torch, device = load_model(weights_path, len(class_ids), device_name)
     logits = predict_rows(rows, model, torch, device, root, class_ids, batch_size)
     labels = np.asarray([class_ids.index(row["class_id"]) for row in rows])
-    results = calibrate_logits(logits, labels, class_ids)
+    results = calibrate_logits(logits, labels, class_ids, target_precision)
     results["confidence_bins_before"] = _confidence_reliability_bins(
         _softmax_rows(logits, 1.0).max(axis=1),
         np.argmax(logits, axis=1) == labels,

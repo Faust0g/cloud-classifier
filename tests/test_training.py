@@ -19,6 +19,7 @@ from cloud_classifier.training import (
     _parse_args,
     _records_from_training_rows,
     _verify_pretrained_normalization,
+    class_weights_for_rows,
     class_order_from_contract,
     create_validation_assignment,
     create_validation_v2_assignment,
@@ -410,6 +411,28 @@ class ValidationV2Tests(unittest.TestCase):
             _parse_args([]).validation_manifest.as_posix(),
             "manifests/validation-v2.json",
         )
+
+    def test_class_weights_are_mean_normalized_and_larger_for_rare_classes(self) -> None:
+        weights = class_weights_for_rows(
+            [
+                training_row(
+                    index,
+                    class_id=(
+                        "cirrus"
+                        if index < 9
+                        else "cumulus" if index == 9 else "no_nube"
+                    ),
+                )
+                for index in range(11)
+            ],
+            ("cirrus", "cumulus", "no_nube"),
+        )
+
+        self.assertAlmostEqual(sum(weights) / len(weights), 1.0)
+        self.assertGreater(weights[1], weights[0])
+        self.assertGreater(weights[2], weights[0])
+        self.assertFalse(_parse_args([]).class_weights)
+        self.assertTrue(_parse_args(["--class-weights"]).class_weights)
 
 
 class ExclusionManifestTests(unittest.TestCase):

@@ -5,18 +5,22 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np
 
+from cloud_classifier.calibration import calibrate_logits
 from cloud_classifier.calibration import (
     TARGET_PRECISION,
     _negative_log_likelihood,
     _smallest_threshold,
     acquire_final_evaluation_lock,
+    calibration_artifact,
     fit_temperature,
     read_split_rows,
 )
 from cloud_classifier.prediction import classify_logits
+from scripts.calibrate import parse_args
 
 
 class TemperatureScalingTests(unittest.TestCase):
@@ -63,6 +67,30 @@ class ThresholdTests(unittest.TestCase):
                 np.asarray([False, True]),
             )
         )
+
+    def test_target_precision_option_changes_calibrated_thresholds(self) -> None:
+        logits = np.asarray(
+            [
+                np.log([0.99, 0.008, 0.001, 0.001]),
+                np.log([0.80, 0.15, 0.049, 0.001]),
+                np.log([0.70, 0.01, 0.28, 0.01]),
+                np.log([0.65, 0.29, 0.05, 0.01]),
+            ]
+        )
+        labels = np.asarray([0, 2, 2, 2])
+        class_ids = ("cumulus", "cirrus", "altocumulus", "no_nube")
+        with patch("cloud_classifier.calibration.fit_temperature", return_value=1.0):
+            relaxed = calibrate_logits(logits, labels, class_ids, 0.5)
+            strict = calibrate_logits(logits, labels, class_ids, 0.8)
+
+        self.assertGreater(strict["firm_threshold"], relaxed["firm_threshold"])
+        self.assertIsNotNone(relaxed["pair_threshold"])
+        self.assertIsNotNone(strict["pair_threshold"])
+        self.assertGreater(strict["pair_threshold"], relaxed["pair_threshold"])
+        self.assertEqual(parse_args(["--target-precision", "0.8"]).target_precision, 0.8)
+        self.assertEqual(parse_args([]).target_precision, 0.85)
+        artifact = calibration_artifact(strict, "partition", "exclusions", "model", 42)
+        self.assertEqual(artifact["objetivo_precision"], 0.8)
 
 
 class SharedClassificationTests(unittest.TestCase):
