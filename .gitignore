@@ -24,3 +24,4 @@ src/cloud_classifier/demo.pyi
 Archivos del sistema y del editor
 
 .DS_Store Thumbs.db .vscode/
+models/
