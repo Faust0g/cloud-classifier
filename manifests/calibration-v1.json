@@ -1,0 +1,14 @@
+{
+  "calibration_version": 1,
+  "T": 2.094918112820625,
+  "t_firme": 0.732676388954764,
+  "s_par": 0.8635836470532069,
+  "porcentaje_par_habilitado": false,
+  "objetivo_precision": 0.85,
+  "tolerancia_suma_top2": 0.08,
+  "minimo_fotos_por_cajon": 30,
+  "partition_sha256": "0ebcf4d3c72ce3344cb51a4024ff5e7333dc9fcfe7e6c5e6bd0c7d5c53c0eae6",
+  "exclusions_sha256": "7977cfb0cb2e1e78cd4b3413200e8af696f5ee5c9bf51c76e438567ad6b969ee",
+  "best_pt_sha256": "7a05901e95e4c061e80e9f28c65f1bc532cf2973f2d9a6d32e1f27f14d6ee2d6",
+  "seed": 42
+}

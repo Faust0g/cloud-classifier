@@ -1,0 +1,5 @@
+HBMCD (Huayun BJUT-MIP): https://github.com/SadaharuZL/HuaYun-BJUT-MIP-Cloud-Dataset
+Razón: link caído, repo aparentemente abandonado (2 años sin actualización)
+
+Zenodo, “Deriving WMO cloud classes from ground-based RGB pictures”: https://zenodo.org/records/14185063
+Razón: La forma en que fueron clasificadas las nubes y el tamaño de las imágenes usadas no encajan con el proyecto
