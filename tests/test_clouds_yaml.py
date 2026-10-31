@@ -19,6 +19,7 @@ EXPECTED_CLASS_IDS = {
 }
 REQUIRED_CLASS_FIELDS = {
     "id",
+    "nombre",
     "codigo",
     "nombre_cientifico",
     "altura",
@@ -71,6 +72,7 @@ class CloudsYamlTests(unittest.TestCase):
                     f"Faltan campos: {', '.join(sorted(missing_fields))}",
                 )
                 for field in (
+                    "nombre",
                     "codigo",
                     "nombre_cientifico",
                     "altura",
@@ -127,6 +129,9 @@ class CloudsYamlTests(unittest.TestCase):
             oversized_text,
             f"Hay textos que superan {MAX_TEXT_LENGTH} caracteres: {oversized_text}",
         )
+        self.assertIs(config.get("mostrar_porcentaje_par"), False)
+        self.assertEqual(config.get("eventos_distintos"), [])
+        self.assertTrue(config.get("cautela_general", "").strip())
 
 
 if __name__ == "__main__":

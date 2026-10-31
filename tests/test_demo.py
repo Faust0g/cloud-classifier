@@ -9,17 +9,12 @@ from PIL import Image
 from cloud_classifier.demo import (
     MAX_IMAGE_BYTES,
     InvalidImageError,
+    _load_cloud_config,
     process_image,
     validate_image,
 )
-from cloud_classifier.prediction import (
-    ClassPrediction,
-    PredictionResult,
-    format_prediction,
-)
-from cloud_classifier.simulated_predictor import (
-    simulate_prediction,
-)
+from cloud_classifier.prediction import classify_logits
+from cloud_classifier.preprocessing import load_model_contract
 
 
 class ValidateImageTests(unittest.TestCase):
@@ -71,55 +66,30 @@ class ValidateImageTests(unittest.TestCase):
                 validate_image(Path(directory) / "missing.png")
 
 
-class SimulatedPredictionTests(unittest.TestCase):
-    def test_scenarios_produce_distinct_user_messages(self) -> None:
-        cloud = format_prediction(simulate_prediction("Nube reconocida"))
-        no_cloud = format_prediction(simulate_prediction("No se identificó una nube"))
-        low_confidence = format_prediction(simulate_prediction("Confianza baja"))
+class PredictionFlowTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.class_ids = tuple(
+            item["id"] for item in load_model_contract()["classes"]
+        )
+        cls.cloud_config = _load_cloud_config(cls.class_ids)
 
-        self.assertIn("Cúmulo (Cumulus)", cloud)
-        self.assertIn("Predicción aceptada", cloud)
-        self.assertIn("Otras posibilidades:", cloud)
-        self.assertIn("Altocúmulo (Altocumulus): 7%", cloud)
-        self.assertIn("No se identificó una nube", no_cloud)
-        self.assertIn("no_nube", no_cloud)
-        self.assertIn("confianza es baja", low_confidence)
-        self.assertIn("probá con otra foto", low_confidence)
-
-    def test_unknown_scenario_is_rejected(self) -> None:
-        with self.assertRaisesRegex(ValueError, "escenarios"):
-            simulate_prediction("modelo real")
-
-    def test_prediction_format_is_independent_of_prediction_source(self) -> None:
-        result = PredictionResult(
-            status="accepted",
-            primary=ClassPrediction("Cb", "Cumulonimbo", "Cumulonimbus", 0.81),
-            alternatives=(
-                ClassPrediction("Ns", "Nimbostrato", "Nimbostratus", 0.12),
-            ),
+    def classify_firm(self, image_path: str | Path):
+        return classify_logits(
+            [8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0],
+            1.0,
+            0.8,
+            0.9,
+            self.class_ids,
         )
 
-        formatted = format_prediction(result)
-
-        self.assertIn("Cumulonimbo (Cumulonimbus) — 81%", formatted)
-        self.assertIn("Nimbostrato (Nimbostratus): 12%", formatted)
-
-    def test_prediction_rejects_more_than_two_alternatives(self) -> None:
-        candidate = ClassPrediction("Cu", "Cúmulo", "Cumulus", 0.1)
-        with self.assertRaisesRegex(ValueError, "como máximo dos"):
-            PredictionResult(
-                status="accepted",
-                primary=candidate,
-                alternatives=(candidate, candidate, candidate),
-            )
-
-    def test_prediction_status_matches_no_cloud_class(self) -> None:
-        candidate = ClassPrediction("Cu", "Cúmulo", "Cumulus", 0.9)
-        with self.assertRaisesRegex(ValueError, "requiere la clase no_nube"):
-            PredictionResult(status="no_cloud", primary=candidate)
-
     def test_process_image_requires_an_image(self) -> None:
-        result, upload, camera = process_image(None, None, "Nube reconocida")
+        result, upload, camera = process_image(
+            None,
+            None,
+            self.classify_firm,
+            self.cloud_config,
+        )
         self.assertIn("Subí una imagen", result)
         self.assertIsNone(upload)
         self.assertIsNone(camera)
@@ -137,11 +107,12 @@ class SimulatedPredictionTests(unittest.TestCase):
                 result, upload, camera = process_image(
                     str(path),
                     None,
-                    "Nube reconocida",
+                    self.classify_firm,
+                    self.cloud_config,
                 )
 
-            self.assertIn("Cúmulo (Cumulus)", result)
-            self.assertIsNone(upload)
+            self.assertIn("Probablemente es Cirro", result)
+            self.assertIsNotNone(upload)
             self.assertIsNone(camera)
             self.assertFalse(path.exists())
 
@@ -160,7 +131,8 @@ class SimulatedPredictionTests(unittest.TestCase):
                 result, upload, camera = process_image(
                     str(path),
                     None,
-                    "Nube reconocida",
+                    self.classify_firm,
+                    self.cloud_config,
                 )
 
             self.assertIn("no contiene una imagen", result)

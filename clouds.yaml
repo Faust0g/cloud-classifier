@@ -2,6 +2,7 @@
 
 clases:
   - id: cirrus
+    nombre: Cirro
     codigo: Ci
     nombre_cientifico: Cirrus
     altura: alta
@@ -24,6 +25,7 @@ clases:
 
 
   - id: cirrocumulus
+    nombre: Cirrocúmulo
     codigo: Cc
     nombre_cientifico: Cirrocumulus
     altura: alta
@@ -49,6 +51,7 @@ clases:
 
 
   - id: cirrostratus
+    nombre: Cirrostrato
     codigo: Cs
     nombre_cientifico: Cirrostratus
     altura: alta
@@ -73,6 +76,7 @@ clases:
 
 
   - id: altocumulus
+    nombre: Altocúmulo
     codigo: Ac
     nombre_cientifico: Altocumulus
     altura: media
@@ -98,6 +102,7 @@ clases:
 
 
   - id: altostratus
+    nombre: Altoestrato
     codigo: As
     nombre_cientifico: Altostratus
     altura: media
@@ -121,6 +126,7 @@ clases:
 
 
   - id: nimbostratus
+    nombre: Nimbostrato
     codigo: Ns
     nombre_cientifico: Nimbostratus
     altura: media
@@ -144,6 +150,7 @@ clases:
 
 
   - id: stratocumulus
+    nombre: Estratocúmulo
     codigo: Sc
     nombre_cientifico: Stratocumulus
     altura: baja
@@ -166,6 +173,7 @@ clases:
 
 
   - id: stratus
+    nombre: Estrato
     codigo: St
     nombre_cientifico: Stratus
     altura: baja
@@ -189,6 +197,7 @@ clases:
 
 
   - id: cumulus
+    nombre: Cúmulo
     codigo: Cu
     nombre_cientifico: Cumulus
     altura: baja
@@ -212,6 +221,7 @@ clases:
 
 
   - id: cumulonimbus
+    nombre: Cumulonimbo
     codigo: Cb
     nombre_cientifico: Cumulonimbus
     altura: baja
@@ -236,6 +246,10 @@ clases:
 
 no_nube:
   mensaje: "No veo una nube que pueda clasificar. Probá con otra foto."
+
+mostrar_porcentaje_par: false
+# Cada entrada documentada contiene clases: [id, id] y una nota curada.
+eventos_distintos: []
 
 cautela_general: >
   Las asociaciones describen información general sobre cada tipo de nube; no son un pronóstico local ni un aviso sobre las condiciones del cielo de esta foto.

@@ -12,13 +12,13 @@ from PIL import Image, ImageOps
 MODEL_CONTRACT_PATH = Path(__file__).with_name("model_contract.json")
 
 
-@lru_cache(maxsize=1)
-def load_model_contract() -> dict[str, Any]:
+@lru_cache(maxsize=4)
+def load_model_contract(path: Path = MODEL_CONTRACT_PATH) -> dict[str, Any]:
     try:
-        contract = json.loads(MODEL_CONTRACT_PATH.read_text(encoding="utf-8"))
+        contract = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as error:
         raise RuntimeError(
-            f"No se pudo cargar el contrato del modelo en {MODEL_CONTRACT_PATH}."
+            f"No se pudo cargar el contrato del modelo en {path}."
         ) from error
 
     if not isinstance(contract, dict) or contract.get("contract_version") != 1:

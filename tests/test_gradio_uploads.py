@@ -8,7 +8,9 @@ from pathlib import Path
 from gradio_client import Client, handle_file
 from PIL import Image
 
-from cloud_classifier.demo import MAX_IMAGE_BYTES, create_demo
+from cloud_classifier.demo import CLOUD_IMAGES_PATH, MAX_IMAGE_BYTES, create_demo
+from cloud_classifier.prediction import classify_logits
+from cloud_classifier.preprocessing import load_model_contract
 
 
 class GradioUploadIntegrationTests(unittest.TestCase):
@@ -24,12 +26,24 @@ class GradioUploadIntegrationTests(unittest.TestCase):
             listener.bind(("127.0.0.1", 0))
             cls.port = listener.getsockname()[1]
 
-        cls.demo = create_demo()
+        class_ids = tuple(
+            item["id"] for item in load_model_contract()["classes"]
+        )
+        cls.demo = create_demo(
+            classifier=lambda image_path: classify_logits(
+                [8.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0],
+                1.0,
+                0.8,
+                0.9,
+                class_ids,
+            )
+        )
         cls.demo.launch(
             server_name="127.0.0.1",
             server_port=cls.port,
             quiet=True,
             prevent_thread_lock=True,
+            allowed_paths=[str(CLOUD_IMAGES_PATH)],
         )
         cls.client = Client(
             f"http://127.0.0.1:{cls.port}",
@@ -88,12 +102,15 @@ class GradioUploadIntegrationTests(unittest.TestCase):
                     result = self.client.predict(
                         handle_file(str(path)),
                         None,
-                        "Nube reconocida",
                         api_name="/classify",
                     )
 
                     self.assertIn(expected_messages[case], result[0])
-                    self.assertEqual(result[1:], (None, None))
+                    self.assertFalse(result[1]["visible"])
+                    self.assertFalse(result[2]["visible"])
+                    self.assertEqual(result[1]["value"], None)
+                    self.assertEqual(result[2]["value"], None)
+                    self.assertEqual(result[3:], (None, None))
                     remaining_files = {
                         item
                         for item in self.upload_directory.rglob("*")
@@ -109,16 +126,19 @@ class GradioUploadIntegrationTests(unittest.TestCase):
             result = self.client.predict(
                 handle_file(str(image_path)),
                 None,
-                "Nube reconocida",
                 api_name="/classify",
             )
 
-        self.assertIn("Cúmulo (Cumulus)", result[0])
-        self.assertEqual(result[1:], (None, None))
+        self.assertIn("Probablemente es Cirro", result[0])
+        self.assertIsNotNone(result[1])
+        self.assertTrue(result[1]["visible"])
+        self.assertFalse(result[2]["visible"])
+        self.assertIsNone(result[2]["value"])
+        self.assertEqual(result[3:], (None, None))
         remaining_files = {
             item for item in self.upload_directory.rglob("*") if item.is_file()
         }
-        self.assertEqual(remaining_files, set())
+        self.assertEqual({path.name for path in remaining_files}, {"cirrus.jpg"})
 
 
 if __name__ == "__main__":

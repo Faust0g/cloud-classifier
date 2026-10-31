@@ -1,6 +1,6 @@
 # Cloud Classifier
 
-Aplicación local en español para identificar nubes en imágenes y explicar qué condiciones suelen asociarse a ellas. La primera rebanada usa resultados simulados para probar la interfaz antes de integrar un modelo.
+Aplicación local en español para identificar nubes en imágenes y explicar qué condiciones suelen asociarse a ellas. La foto se procesa localmente y no se conserva.
 
 ## Ejecutar localmente
 
@@ -13,7 +13,6 @@ uv run cloud-classifier
 
 Abrí la dirección local que imprime Gradio. La interfaz permite cargar JPEG/PNG de hasta 10 MB o tomar una foto con la cámara. La cámara requiere permiso del navegador y contexto seguro; localhost sirve para desarrollo. Si se deniega el permiso o no hay cámara, se puede cargar un archivo.
 
-Los resultados están simulados y se pueden seleccionar para probar los estados de nube reconocida, `no_nube` y baja confianza. No representan una predicción del contenido de la imagen.
 La analítica de uso de Gradio está desactivada; las imágenes no se usan para telemetría.
 
 ## Fotos de referencia de nubes
@@ -22,7 +21,16 @@ Las fotos que acompañan las explicaciones se guardan en `app/assets/clouds/`, u
 
 ## Contrato del modelo
 
-El contrato versionado está en `src/cloud_classifier/model_contract.json`. Define el orden de las 10 clases OMM seguido de `no_nube`, las salidas como logits y el preprocesamiento compartido implementado en `src/cloud_classifier/preprocessing.py`. La media y el desvío ImageNet son provisionales hasta confirmar el modelo preentrenado; el umbral se deja pendiente de calibración.
+El contrato versionado está en `src/cloud_classifier/model_contract.json`. Define el orden de las 10 clases OMM seguido de `no_nube`, las salidas como logits y el preprocesamiento compartido implementado en `src/cloud_classifier/preprocessing.py`. La aplicación requiere `manifests/calibration-v1.json` y un `models/clasificador.onnx` exportado desde el `runs/best.pt` correspondiente; valida hashes, orden de clases y dimensiones al arrancar.
+
+Los pesos y el ONNX no se versionan por las condiciones de licencia de Open Images. Para exportar el checkpoint local, instalá las dependencias de entrenamiento/exportación y ejecutá:
+
+```powershell
+uv sync --extra training
+uv run python scripts/export_onnx.py
+```
+
+El exportador produce logits crudos con entrada `1x3x224x224` y verifica la equivalencia con PyTorch en tres entradas sintéticas antes de aceptar el artefacto. `models/` está excluido de Git.
 
 ## Preparar conjuntos públicos
 

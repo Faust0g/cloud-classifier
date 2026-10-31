@@ -1,1 +1,2 @@
 * text=auto eol=lf
+manifests/*.json -text
