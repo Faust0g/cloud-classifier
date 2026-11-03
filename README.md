@@ -125,7 +125,7 @@ PYTHONPATH=src python scripts/calibrate.py --model <ruta>/best.pt --target-preci
 
 La evaluación final (`scripts/evaluate_final.py`) se ejecuta una sola vez.
 
-Los hashes de los manifiestos dependen de los bytes exactos de cada archivo. Si clonás el repositorio en Linux o macOS, los saltos de línea pueden diferir de los de Windows y las verificaciones fallar con "el manifiesto no corresponde". [Resolver con `.gitattributes` (`manifests/*.json -text`) o documentar la conversión.]
+Los hashes de los manifiestos dependen de los bytes exactos de cada archivo. Si clonás el repositorio en Linux o macOS, los saltos de línea pueden diferir de los de Windows y las verificaciones fallar con "el manifiesto no corresponde". [Los manifiestos se guardan sin conversión de saltos de línea (.gitattributes)]
 
 ## Limitaciones conocidas
 
