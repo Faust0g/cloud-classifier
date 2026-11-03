@@ -6,11 +6,12 @@ Clasifica una foto del cielo en uno de los 10 géneros de nubes de la Organizaci
 
 > **No es un pronóstico del tiempo.** Las asociaciones meteorológicas de cada nube son información general sobre ese tipo de nube, no un aviso sobre el cielo de la foto.
 
-Es un proyecto de aprendizaje y portfolio. Importa tanto el método (cómo se evalúa sin engañarse) como el resultado.
+Es un proyecto de aprendizaje y portfolio.
 
-## Resultados, sin maquillaje
+## Resultados
 
-El modelo es MobileNetV3 preentrenado (transfer learning) y **no es muy preciso**. Estos números salen de una evaluación final que se ejecutó **una sola vez**, con la calibración ya fijada:
+El modelo es MobileNetV3 preentrenado (transfer learning). 
+Estos números salen de una evaluación final que se ejecutó una sola vez, con la calibración ya fijada:
 
 | Conjunto | Fotos | Top-1 | Top-2 | Precisión de los resultados "firmes" |
 |---|---:|---:|---:|---:|
@@ -21,10 +22,10 @@ Entre paréntesis, intervalos de confianza de 95 % (Wilson).
 
 Lo que significan:
 
-- Un resultado "firme" acierta aproximadamente 6 de cada 10 veces. El objetivo de calibración era 75 % y **no se cumplió** en la prueba: el umbral se eligió con el grupo de calibración y tiende a ser optimista. Por eso la app no muestra un porcentaje de confianza en los resultados firmes.
-- La clase correcta está entre las dos primeras unas 7 de cada 10 veces (en mis fotos, 5 de cada 10). Por eso existe el resultado de **par** ("puede ser A o B").
-- Las clases más débiles son `stratus` y `stratocumulus` (en mis fotos, 1 de 17 y 0 de 14). Se confunden entre sí y con `nimbostratus`.
-- Con mis fotos el modelo rinde peor que con la prueba. No sé separar cuánto se debe a que son fotos de otras cámaras y de WhatsApp, y cuánto a etiquetas mías dudosas.
+- Un resultado "firme" acierta aproximadamente 6 de cada 10 veces. El objetivo de calibración era 75 % y no se cumplió en la prueba: el umbral se eligió con el grupo de calibración y tiende a ser optimista. Por eso la app no muestra un porcentaje de confianza en los resultados firmes.
+- La clase correcta está entre las dos primeras unas 7 de cada 10 veces (en fotos propias, 5 de cada 10). Por eso existe el resultado de par ("puede ser A o B").
+- Las clases más débiles son `stratus` y `stratocumulus` (en fotos propias, 1 de 17 y 0 de 14). Se confunden entre sí y con `nimbostratus`.
+- Con fotos personales el modelo rinde peor que con las de prueba.
 
 ## Ejecutar localmente
 
